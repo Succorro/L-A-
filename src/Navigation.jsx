@@ -7,7 +7,7 @@ import {
   
 
 function Navigation() {
-    const linkArray = ['home', 'services', 'our team', 'contact']
+    const linkArray = ['home', 'services', 'team', 'contact']
     function handleMenuClick(){
         console.log('clicked')
     }
@@ -22,7 +22,7 @@ function Navigation() {
         <div id='right-nav' className='flex justify-end md:justify-start items-center w-1/2'>
             <div id='links' className='flex h-[12vh] opacity-0 md:opacity-100 -translate-x-[100vw] md:translate-x-0'>
                 {linkArray.map((link, index)=> {
-                   return <Link key={index} onClick={()=>handleLinkClicked()} className={linkStyle} to={link === 'home' ? '/' : `/${link}`}>{link.toUpperCase()}</Link>
+                   return <Link key={index} onClick={()=>handleLinkClicked()} className={linkStyle} to={link === 'home' ? '/' : `/${link}`}>{link === 'team' ? 'OUR ' + link.toUpperCase() : link.toUpperCase() }</Link>
                 })}
             </div>
             <div id='menu' className='flex opacity-100 md:opacity-0 md:hidden md:-translate-x-[100vw] -translate-x-10'>
@@ -33,7 +33,7 @@ function Navigation() {
                     <SheetContent className='w-[40vw] bg-White'>
                     <div className='flex flex-col '>
                         {linkArray.map((link, index)=> {
-                            return <Link key={index} onClick={()=>handleLinkClicked()} className='text-3xl font-medium my-[2vh] py-2 pl-1 border border-b-2 border-slate-800 border-0 w-full hover:text-Blue hover:bg-gray-200  hover:border-slate-400  transition ease-in-out duration-50 delay-50' to={link === 'home' ? '/' : `/${link}`}>{link.toUpperCase()}</Link>
+                            return <Link key={index} onClick={()=>handleLinkClicked()} className='text-3xl font-medium my-[2vh] py-2 pl-1 border border-b-2 border-slate-800 border-0 w-full hover:text-Blue hover:bg-gray-200  hover:border-slate-400  transition ease-in-out duration-50 delay-50' to={link === 'home' ? '/' : `/${link}`}>{link === 'team' ? 'OUR ' + link.toUpperCase() : link.toUpperCase() }</Link>
                         })}
                     </div>
                     </SheetContent>
