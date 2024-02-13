@@ -7,7 +7,7 @@ import Home from './Home';
 
 function App() {
   return ( 
-    <div className="w-full h-[100vh] bg-coolWhite font-['poppins'] font-catamaran">
+    <div className="w-full h-[100vh] bg-White font-['poppins'] font-catamaran">
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />}/>
