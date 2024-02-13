@@ -15,8 +15,8 @@ function Navigation() {
         console.log('clicked')
     }
   return (
-    <div className="w-[100vw] h-[12vh] border flex flex-row justify-between font-medium text-xl text-Dark">
-        <div id='left-nav' className="flex border items-center self-center">
+    <div className="w-[100vw] h-[12vh] flex flex-row justify-between font-medium text-xl text-Dark">
+        <div id='left-nav' className="flex items-center self-center ml-[5vw]">
             <img className="" src="" alt="logo" />
         </div>
         <div id='right-nav' className='flex justify-end md:justify-start items-center w-1/2'>
@@ -30,10 +30,10 @@ function Navigation() {
                     <SheetTrigger>
                         <img onClick={()=> handleMenuClick()} className='hover:cursor-pointer m-5' src="/menu.svg" alt="menu" />
                     </SheetTrigger>
-                    <SheetContent>
-                    <div className='flex flex-col'>
+                    <SheetContent className='w-[40vw] bg-White'>
+                    <div className='flex flex-col '>
                         {linkArray.map((link, index)=> {
-                            return <Link key={index} onClick={()=>handleLinkClicked()} className='text-3xl font-semibold pt-[4vh] border w-full hover:text-Blue transition ease-in-out delay-100' to={link === 'home' ? '/' : `/${link}`}>{link.toUpperCase()}</Link>
+                            return <Link key={index} onClick={()=>handleLinkClicked()} className='text-3xl font-medium my-[2vh] py-2 pl-1 border border-b-2 border-slate-800 border-0 w-full hover:text-Blue hover:bg-gray-200  hover:border-slate-400  transition ease-in-out duration-50 delay-50' to={link === 'home' ? '/' : `/${link}`}>{link.toUpperCase()}</Link>
                         })}
                     </div>
                     </SheetContent>
