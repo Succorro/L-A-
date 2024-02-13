@@ -33,7 +33,7 @@ function Navigation() {
                     <SheetContent className='w-[40vw] bg-White'>
                     <div className='flex flex-col '>
                         {linkArray.map((link, index)=> {
-                            return <Link key={index} onClick={()=>handleLinkClicked()} className='text-3xl font-medium my-[2vh] py-2 pl-1 border border-b-2 border-slate-800 border-0 w-full hover:text-Blue hover:bg-gray-200  hover:border-slate-400  transition ease-in-out duration-50 delay-50' to={link === 'home' ? '/' : `/${link}`}>{link === 'team' ? 'OUR ' + link.toUpperCase() : link.toUpperCase() }</Link>
+                            return <Link key={index} onClick={()=>handleLinkClicked()} className=' text-2xl sm:text-3xl font-medium my-[2vh] py-2 pl-1 border border-b-2 border-slate-800 border-0 w-full hover:text-Blue hover:bg-gray-200  hover:border-slate-400  transition ease-in-out duration-50 delay-50' to={link === 'home' ? '/' : `/${link}`}>{link === 'team' ? 'OUR ' + link.toUpperCase() : link.toUpperCase() }</Link>
                         })}
                     </div>
                     </SheetContent>
