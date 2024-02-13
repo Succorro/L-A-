@@ -7,12 +7,9 @@ import Home from './Home';
 
 function App() {
   return ( 
-    <div style={{
-      backgroundImage:"url('Space.png')"}} className="w-full bg-color font-['poppins']">
+    <div className="w-full h-[100vh] bg-coolWhite font-['poppins'] font-catamaran">
       <Navigation />
       <Routes>
-        {/* <Route path="/about" element={<About />}/>
-        <Route path="/projects" element={<Projects />}/> */}
         <Route path="/" element={<Home />}/>
       </Routes>
       
