@@ -27,13 +27,13 @@ function Home() {
     },
   ]
   return (
-    <div>
+    <div className="text-lg">
       <section id="imageSection" className="h-[100vh] bg-White">
         <img src="" alt="bg" />
       </section>
       <section id="aboutSection" className="h-[100vh] bg-White">
         <h1>About us </h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate perferendis labore aperiam deserunt assumenda! Aperiam ad veritatis dignissimos repellat neque nemo. Voluptate iste, odio rem velit impedit deserunt aut incidunt?</p>
+        <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate perferendis labore aperiam deserunt assumenda! Aperiam ad veritatis dignissimos repellat neque nemo. Voluptate iste, odio rem velit impedit deserunt aut incidunt?</p>
       </section>
       <section id="beliefsSection" className="h-[100vh] bg-White">
         <div id="text" className="flex flex-col items-center ">
