@@ -17,7 +17,9 @@ function Navigation() {
   return (
     <div className="w-[100vw] h-[12vh] flex flex-row justify-between font-medium text-xl text-Dark">
         <div id='left-nav' className="flex items-center self-center ml-[5vw]">
-            <img className="border w-[7vw]" src="/scales-of-justice.png" alt="logo" />
+            <Link to='/'>
+                <img className="border w-[7vw]" src="/scales-of-justice.png" alt="logo" />
+            </Link>
         </div>
         <div id='right-nav' className='flex justify-end md:justify-start items-center w-1/2'>
             <div id='links' className='flex h-[12vh] opacity-0 md:opacity-100 -translate-x-[100vw] md:translate-x-0'>
@@ -30,10 +32,10 @@ function Navigation() {
                     <SheetTrigger>
                         <img onClick={()=> handleMenuClick()} className='hover:cursor-pointer m-5' src="/menu.svg" alt="menu" />
                     </SheetTrigger>
-                    <SheetContent className='w-[40vw] bg-White'>
+                    <SheetContent className='w-[40vw] bg-Blue border-none'>
                     <div className='flex flex-col '>
                         {linkArray.map((link, index)=> {
-                            return <Link key={index} onClick={()=>handleLinkClicked()} className=' text-2xl sm:text-3xl font-medium my-[2vh] py-2 pl-1 border border-b-2 border-slate-800 border-0 w-full hover:text-Blue hover:bg-gray-200  hover:border-slate-400  transition ease-in-out duration-50 delay-50' to={link === 'home' ? '/' : `/${link}`}>{link === 'team' ? 'OUR ' + link.toUpperCase() : link.toUpperCase() }</Link>
+                            return <Link key={index} onClick={()=>handleLinkClicked()} className='rounded-md text-slate-200 rounded-b-none text-2xl sm:text-3xl font-medium my-[2vh] py-2 pl-1 border border-b-2 border-slate-200 border-0 w-full hover:text-slate-600   hover:border-slate-600  transition ease-in-out duration-50 delay-100' to={link === 'home' ? '/' : `/${link}`}>{link === 'team' ? 'OUR ' + link.toUpperCase() : link.toUpperCase() }</Link>
                         })}
                     </div>
                     </SheetContent>
