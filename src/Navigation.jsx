@@ -17,7 +17,7 @@ function Navigation() {
   return (
     <div className="w-[100vw] h-[12vh] flex flex-row justify-between font-medium text-xl text-Dark">
         <div id='left-nav' className="flex items-center self-center ml-[5vw]">
-            <img className="" src="" alt="logo" />
+            <img className="border w-[7vw]" src="/scales-of-justice.png" alt="logo" />
         </div>
         <div id='right-nav' className='flex justify-end md:justify-start items-center w-1/2'>
             <div id='links' className='flex h-[12vh] opacity-0 md:opacity-100 -translate-x-[100vw] md:translate-x-0'>
