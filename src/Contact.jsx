@@ -1,7 +1,12 @@
 
 function Contact() {
   return (
-    <div>Contact</div>
+    <div>
+        <section id="image"></section>
+        <section id='contact-info'></section>
+        <section id='location-hours'></section>
+        <section id='socials'></section>
+    </div>
   )
 }
 

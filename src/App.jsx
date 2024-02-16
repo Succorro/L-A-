@@ -5,6 +5,7 @@ import Home from './Home';
 import Services from './Services';
 import Team from './Team';
 import Contact from './Contact';
+import Footer from './Footer';
 // import Projects from './Projects/Projects';
 // import About from './About/About';
 
@@ -18,7 +19,7 @@ function App() {
         <Route path="/contact" element={<Contact />}/>
         <Route path="/" element={<Home />}/>
       </Routes>
-      
+      <Footer/>
     </div>
   )
 }

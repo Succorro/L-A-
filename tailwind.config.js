@@ -22,7 +22,7 @@ module.exports = {
         catamaran: ["Catamaran"],
       },
       colors: {
-        Blue: "#3772FF",
+        Blue: "#191970",
         White: "#F4FDFF",
         Dark: "#080708",
         border: "hsl(var(--border))",
