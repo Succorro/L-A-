@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 function Home() {
-  const beliefsArray = [
+  const servicesArray = [
     {
       title: 'title', 
       image: 'img'
@@ -28,32 +28,42 @@ function Home() {
   ]
   return (
     <div className="text-lg flex flex-col items-center">
-      <section id="imageSection" className="h-[100vh] bg-White mt-1">
-        <div className="w-full h-[60vh]">
-          <img className="h-full" src="/penandpaper.jpg" alt="bg" />
+
+      <section id="imageSection" className="pb-10 w-full bg-White mt-1">
+        <div className="flex justify-center">
+          <img className="max-h-[70vh]" src="/penandpaper.jpg" alt="bg" />
         </div>
-        <h1  className="text-5xl font-medium mx-auto my-20">Luna and Associates</h1>
-        <Link to='/contact'>
-          <button className="bg-Blue text-white font-semibold text-lg px-6 mx-auto py-2 rounded-3xl hover:bg-blue-900 hover:text-white transition ease-in-out duration-50 delay-100">
+        <h1  className="text-5xl font-bold text-Blue mt-20">Luna and Associates</h1>
+        <p className="m-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate perferendis labore aperiam deserunt assumenda! Aperiam ad veritatis dignissimos repellat neque nemo. Voluptate iste, odio rem velit impedit deserunt aut incidunt?</p>
+        <Link className="bg-Blue text-white font-semibold text-lg px-6 py-2 rounded-3xl hover:bg-blue-900 hover:text-white transition ease-in-out duration-50 delay-100" to='/contact'>
+          <button >
             Contact Us
           </button>
         </Link>
       </section>
-      <section id="aboutSection" className="h-[100vh] bg-White">
-        <h1>About us </h1>
-        <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate perferendis labore aperiam deserunt assumenda! Aperiam ad veritatis dignissimos repellat neque nemo. Voluptate iste, odio rem velit impedit deserunt aut incidunt?</p>
+
+      <section id="aboutSection" className="pt-20 pb-10 bg-White flex flex-col items-center">
+        <img className="w-[50vh] mb-10" src="/lawconvo.jpg" alt="" />
+        <h1 className="text-5xl font-bold text-Blue">Susana B. Luna</h1>
+        <p className="m-10">Susana B. Luna is an experienced immigration attorney dedicated to serving clients with integrity and compassion. With an active license and a commitment to excellence, Susana brings a wealth of knowledge and expertise to her practice. Susana is fluent in Spanish, ensuring effective communication with Spanish-speaking clients.</p>
+        <img className="w-[50vh] mb-10" src="/lawconvo.jpg" alt="" />
+        <Link className="bg-Blue text-white font-semibold text-lg px-6 py-2 rounded-3xl hover:bg-blue-900 hover:text-white transition ease-in-out duration-50 delay-100" to='/team'>
+          <button >
+            Get to know the team
+          </button>
+        </Link>
       </section>
-      <section id="beliefsSection" className="h-[100vh] bg-White w-full">
+
+      <section id="servicesSection" className=" bg-white w-full">
         <div id="text" className="flex flex-col items-center ">
-          <span className=" text-xl font-semibold mb-5 text-Blue">Our core beliefs</span>
-          <h2 className="text-4xl font-bold m-2 text-center mb-5">What we stand for:</h2>
+          <span className="mt-10 mb-10 text-5xl font-bold text-Blue">Our Services</span>
         </div>
-        <ul id="group" className="flex flex-col sm:grid sm:grid-cols-3 mx-10">
-            {beliefsArray.map((obj, index) => {
+        <ul id="group" className="flex flex-col md:grid md:grid-cols-3 mx-10">
+            {servicesArray.map((obj, index) => {
               const {title, image} = obj
-              return <li key={index} className="flex flex-col m-2 border rounded border-zinc sm:p-5 items-center p-2">
+              return <li key={index} className="flex flex-col m-2  sm:p-5 items-center p-2">
                       <picture className="justify-center">
-                          <img src={image} style={{width: "60px"}} alt="pic" />
+                          <img src='/Gavel.png' style={{width: "60px"}} alt="pic" />
                       </picture>
                       <div>
                           <h3 className="font-bold text-xl text-Blue">{title}</h3>

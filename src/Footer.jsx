@@ -11,8 +11,7 @@ function Footer() {
                     <p className="my-5">
                         Monday - Friday: 9AM - 5PM
                     </p>
-                    <p className="my-5">Saturday: Closed</p>
-                    <p className="mt-5 mb-10">Sunday: Closed</p>
+                    <p className="my-5 mb-10">Saturday-Sunday: Closed</p>
                 </div>
             </div>
         <div className={divStyle} id="contact">
