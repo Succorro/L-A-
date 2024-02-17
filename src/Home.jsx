@@ -31,7 +31,7 @@ function Home() {
 
       <section id="imageSection" className="pb-10 w-full bg-White mt-1">
         <div className="flex justify-center">
-          <img className="max-h-[70vh]" src="/penandpaper.jpg" alt="bg" />
+          <img className="max-h-[70vh]" src="/Statue.jpg" alt="bg" />
         </div>
         <h1  className="text-5xl font-bold text-Blue mt-20">Luna and Associates</h1>
         <p className="m-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate perferendis labore aperiam deserunt assumenda! Aperiam ad veritatis dignissimos repellat neque nemo. Voluptate iste, odio rem velit impedit deserunt aut incidunt?</p>
@@ -60,7 +60,7 @@ function Home() {
         </div>
         <ul id="group" className="flex flex-col md:grid md:grid-cols-3 mx-10">
             {servicesArray.map((obj, index) => {
-              const {title, image} = obj
+              const {title} = obj
               return <li key={index} className="flex flex-col m-2  sm:p-5 items-center p-2">
                       <picture className="justify-center">
                           <img src='/Gavel.png' style={{width: "60px"}} alt="pic" />
