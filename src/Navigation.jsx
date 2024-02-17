@@ -32,10 +32,10 @@ function Navigation() {
                     <SheetTrigger>
                         <img onClick={()=> handleMenuClick()} className='hover:cursor-pointer m-5' src="/menu.svg" alt="menu" />
                     </SheetTrigger>
-                    <SheetContent className='w-[40vw] bg-Blue border-none'>
-                    <div className='flex flex-col '>
+                    <SheetContent className='w-[40vw] bg-White border-none font-libre'>
+                    <div className='flex flex-col'>
                         {linkArray.map((link, index)=> {
-                            return <Link key={index} onClick={()=>handleLinkClicked()} className='rounded-md text-slate-200 rounded-b-none text-2xl sm:text-3xl font-medium my-[2vh] py-2 pl-1 border border-b-2 border-slate-200 border-0 w-full hover:text-slate-600   hover:border-slate-600  transition ease-in-out duration-50 delay-100' to={link === 'home' ? '/' : `/${link}`}>{link === 'team' ? 'OUR ' + link.toUpperCase() : link.toUpperCase() }</Link>
+                            return <Link key={index} onClick={()=>handleLinkClicked()} className='text-slate-500 text-xl sm:text-2xl font-semibold mt-5 pb-5 pt-3 w-[40vw] pl-4 -ml-6 border border-0 border-b border-Blue hover:text-Blue hover:border-slate-900 transition ease-in-out duration-50 delay-100' to={link === 'home' ? '/' : `/${link}`}>{link === 'team' ? 'OUR ' + link.toUpperCase() : link.toUpperCase() }</Link>
                         })}
                     </div>
                     </SheetContent>
@@ -45,5 +45,5 @@ function Navigation() {
     </div>
   )
 }
-const linkStyle = 'mx-3 px-1 pt-[4vh] border border-Blue border-0 border-b-4 h-[12vh] hover:text-royalBlue transition ease-in-out delay-100'
+const linkStyle = 'text-slate-600 text-lg mx-3 px-1 pt-[4vh] border border-Blue border-0 border-b-2 h-[12vh] hover:text-Blue transition ease-in-out delay-100'
 export default Navigation
