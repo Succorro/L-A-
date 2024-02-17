@@ -11,7 +11,7 @@ import Footer from './Footer';
 
 function App() {
   return ( 
-    <div className="w-full h-[100vh] bg-White font-catamaran">
+    <div className="w-full h-[100vh] bg-White font-libre">
       <Navigation />
       <Routes>
         <Route path="/services" element={<Services />}/>

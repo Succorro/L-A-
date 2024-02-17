@@ -28,11 +28,13 @@ function Home() {
   ]
   return (
     <div className="text-lg flex flex-col items-center">
-      <section id="imageSection" className="h-[100vh] bg-White">
-        <img src="/penandpaper.jpg" alt="bg" />
+      <section id="imageSection" className="h-[100vh] bg-White mt-1">
+        <div className="w-full h-[60vh]">
+          <img className="h-full" src="/penandpaper.jpg" alt="bg" />
+        </div>
         <h1  className="text-5xl font-medium mx-auto my-20">Luna and Associates</h1>
         <Link to='/contact'>
-          <button className="bg-Blue text-white text-lg px-6 mx-auto py-2 rounded-3xl hover:bg-blue-900 hover:text-white transition ease-in-out duration-50 delay-100">
+          <button className="bg-Blue text-white font-semibold text-lg px-6 mx-auto py-2 rounded-3xl hover:bg-blue-900 hover:text-white transition ease-in-out duration-50 delay-100">
             Contact Us
           </button>
         </Link>

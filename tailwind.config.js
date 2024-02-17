@@ -20,6 +20,7 @@ module.exports = {
     extend: {
       fontFamily: {
         catamaran: ["Catamaran"],
+        libre: ["Libre Bodoni"],
       },
       colors: {
         Blue: "#191970",
