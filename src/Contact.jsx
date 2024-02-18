@@ -1,52 +1,61 @@
 
 function Contact() {
   return (
-    <div className="bg-White w-[100vw] flex flex-col items-center font-libre font-extrabold">
-        <section id="image">
-            <img src="/lawconvo.jpg" alt="meeting" />
-        </section>
-
-        <h1 className={h1Style}>GET IN TOUCH</h1>
-        <section className={sectionStyle} id='contact-info'>
-            <img className="w-20 mt-8 rounded-xl" src="/email.png" alt="office" />
-            <h1 className={innerh1}>Susana B. Luna</h1>
-            <p className="font-bold p-3 ">Phone: <a className="text-Blue font-semibold text-lg" href="tel:+2092040088">(209) 204 - 0088</a></p>     
-            <p className="font-bold p-3">Email: <a className="text-Blue font-semibold text-lg" href="mailto:susanaluna.law@gmail.com">susanaluna.law@gmail.com</a></p>           
-        </section>
-        <section className={sectionStyle} id='contact-info'>
-            <img className="w-20 mt-8 rounded-xl" src="/phone.png" alt="office" />
-            <h1 className={innerh1}>Office Contact</h1>
-            <p className="font-bold p-3 ">Phone: <a className="text-Blue font-semibold text-lg" href="tel:+2094098879">(209) 409 - 8879</a></p>               
-        </section>
-
-        <h1 className={h1Style}>WHERE TO FIND US</h1>
-        <section className={sectionStyle} id='location-hours'>
-            <img className="w-20 mt-5 rounded-xl" src="/pin.png" alt="office" />
-            <h1 className={innerh1}>The Luna Building</h1>
-            <div className="flex flex-col text-start">
-                <p className="font-bold">Address:</p>
-                <a className="font-bold text-Blue" href="https://www.google.com/maps/dir/?api=1&destination=Luna+and+Associates+Modesto+CA&travelmode=driving" target="_blank" >1520 H St. Modesto, CA 95354</a>
+    <div className="bg-White flex flex-col items-center font-libre font-extrabold ">
+        <div className="bg-Nav h-[30vh] w-full">
+            <h1 className="text-5xl mt-32 font-bold text-White">Contact Us</h1>
+        </div>
+        <div className="flex flex-col text-start w-full text-slate-700 ml-20 mt-10">
+            <h1 className="text-3xl">Have any Questions?</h1>
+            <h1 className="text-3xl">We&apos;re <span className="underline">here to help</span></h1>
+        </div>
+        <div className="flex flex-row text-start w-full text-slate-700 my-20 items-center justify-between">
+            <div className="flex flex-col ml-10">
+                <h1 className='text-3xl font-bold p-3'>Susana B. Luna</h1>
+                <p className="font-bold p-3 ">Phone: <a className=" font-semibold " href="tel:+2092040088">(209) 204 - 0088</a></p>     
+                <p className="font-bold p-3">Email: <a className=" font-semibold text-lg" href="mailto:susanaluna.law@gmail.com">susanaluna.law@gmail.com</a></p>           
             </div>
-            <div className="flex flex-col text-start w-[37vw] ">
-                <p className="font-bold">Hours: </p> 
-                <p className="font-bold font-libre text-Blue">
-                    Monday - Friday: 9AM - 5PM
+            <div className="flex flex-col mr-20">
+                <img className="w-40 mt-8 rounded-xl" src="/lawconvo.jpg" alt="office" />
+            </div>
+        </div>
+        <div className="flex flex-row text-start w-full text-slate-700 my-20 items-center justify-between">
+            <div className="flex flex-col ml-12">
+                <img className="w-40 mt-8 rounded-xl" src="/lawconvo.jpg" alt="office" />
+            </div>
+            <div className="flex flex-col mr-20">
+                <h1 className='text-3xl font-bold p-3'>Office Contact</h1>
+                <p className="font-bold p-3 ">Phone: <a className=" font-semibold" href="tel:+2094098879">(209) 409 - 8879</a></p>               
+            </div>
+        </div>
+
+        <div className="flex flex-col text-end w-full text-slate-700 mr-20 my-5">
+            <h1 className="text-3xl">How to <span className="underline">Find Us</span></h1>
+        </div>
+        <div className="flex flex-col">
+            <img className="w-96 mt-5 rounded-xl" src="/Luna.jpeg" alt="office" />
+            <div className="flex flex-col text-start my-5">
+                <p className=" text-xl font-bold">Address:</p>
+                <a className="font-bold  my-3" href="https://www.google.com/maps/dir/?api=1&destination=Luna+and+Associates+Modesto+CA&travelmode=driving" target="_blank" >1520 H St. Modesto, CA 95354</a>
+            </div>
+            <div className="flex flex-col text-start ">
+                <p className="font-bold text-xl">Hours: </p> 
+                <p className="font-bold my-3">
+                    Monday - Friday: <span className="text-md ml-1 font-semibold">9AM - 5PM</span>
                 </p>
-                <p className="font-bold text-Blue">Saturday: Closed</p>
-                <p className="font-bold text-Blue">Sunday: Closed</p>
+                <p className="font-bold  my-3">Saturday: <span className="ml-1">Closed</span></p>
+                <p className="font-bold  my-3">Sunday: <span className="ml-1">Closed</span></p>
             </div>
-        </section>
-
-        <h1 className={h1Style}>SOCIAL</h1>
-        <section className={sectionStyle} id='socials'>
-            <p>facebook</p>
-            <p>instagram</p>
-            <p>youtube?</p>
-        </section>
+        </div>
+        <div className="flex flex-col text-center w-full text-slate-700 mt-5">
+            <h1 className="text-3xl">Follow Our Socials</h1>
+        </div>
+        <div className='flex justify-center mt-10 mb-5' id="socials">
+            <a className="w-16" href=""><img src="/instagram.png" alt="" /></a>
+            <a className="w-16" href=""><img src="/facebook.png" alt="" /></a>
+            <a className="w-16" href=""><img src="/tik-tok.png" alt="" /></a>
+        </div>
     </div>
   )
 }
-const h1Style='text-3xl text-Blue m-10'
-const innerh1='text-2xl text-Blue m-10 my-5 font-semibold'
-const sectionStyle='text-lg bg-white w-[70vw] h-[50vh] mb-10 shadow-lg flex flex-col items-center'
 export default Contact

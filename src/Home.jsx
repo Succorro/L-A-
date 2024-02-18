@@ -32,7 +32,6 @@ function Home() {
       <section id='cool' className="w-full h-[100vh]">
         <div id='nav' className="">
           <img className="absolute h-[100vh] object-cover" src="/Statue.jpg" alt="" />
-          {/* <Navigation/> */}
         </div>
         <h1 className="absolute text-5xl text-White font-dark ml-[16vw] sm:ml-[20vw] my-56">Luna and Associates</h1>
         <h2 className="absolute text-3xl text-White font-dark ml-[32vw] my-72">Immigration Law</h2>
