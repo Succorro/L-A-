@@ -20,7 +20,9 @@ function Navigation() {
 
           <NavbarContent className="hidden sm:flex gap-4 text-White font-bold" justify="end">
             <NavbarBrand>
+            <Link to='/'>
               <img src="" alt="L + A" />
+            </Link>
             </NavbarBrand>
             <NavbarItem>
               <Link to='/'>
@@ -44,7 +46,7 @@ function Navigation() {
             </NavbarItem>
           </NavbarContent>
 
-          <NavbarMenu  className="bg-gradient-to-b from-Nav to-transparent ">
+          <NavbarMenu  className="bg-transparent">
             <NavbarMenuItem >
               <Link
                 className="w-full text-4xl font-bold text-slate-600 hover:text-White transition ease-in-out delay-100 my-10"
