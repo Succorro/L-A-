@@ -67,41 +67,40 @@ function Team() {
 
     }
   return (
-    <div className="bg-White">
-        <section className="flex flex-col items-center m-10 text-slate-700">
+    <div className=" bg-Nav pt-20">
+        <section className="flex flex-col items-center p-10 text-slate-700">
             <ul className="grid grid-cols-3">
                 <li className="hover:opacity-90 hover:cursor-pointer transition ease-in-out delay-100 mx-1" onClick={()=> handleLiClick(1)}>
                     <img className="w-[40vw]" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" alt="team member" />
-                    <h1 className="text-xl font-bold">Tim Cook</h1>
-                    <p className="font-medium text-md">CEO</p>
+                    <h1 className="text-xl font-bold">Sample</h1>
+                    <p className="font-medium text-md border bg-White mx-12">Learn more</p>
                 </li>
                 <li className="hover:opacity-90 hover:cursor-pointer transition ease-in-out delay-100 mx-1" onClick={()=> handleLiClick(2)}>
                     <img className="w-[40vw]" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" alt="team member" />
-                    <h1 className="text-xl font-bold">Tim Cook</h1>
-                    <p className="font-medium text-md">CEO</p>
+                    <h1 className="text-xl font-bold">Sample</h1>
+                    <p className="font-medium text-md border bg-White mx-12">Learn more</p>
                 </li>
                 <li className="hover:opacity-90 hover:cursor-pointer transition ease-in-out delay-100 mx-1" onClick={()=> handleLiClick(3)}>
                     <img className="w-[40vw]" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" alt="team member" />
-                    <h1 className="text-xl font-bold">Tim Cook</h1>
-                    <p className="font-medium text-md">CEO</p>
+                    <h1 className="text-xl font-bold">Sample</h1>
+                    <p className="font-medium text-md border bg-White mx-12">Learn more</p>
                 </li>
+               
             </ul>
             {display1}
             <ul className="grid grid-cols-3 mt-5">
-                <li className="hover:opacity-90 hover:cursor-pointer transition ease-in-out delay-100 mx-1" onClick={()=> handleLiClick(4)}>
+                 <li className="hover:opacity-90 hover:cursor-pointer transition ease-in-out delay-100 mx-1" onClick={()=> handleLiClick(4)}>
                     <img className="w-[40vw]" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" alt="team member" />
-                    <h1 className="text-xl font-bold">Tim Cook</h1>
-                    <p className="font-medium text-md">CEO</p>
-                </li>
-                <li className="hover:opacity-90 hover:cursor-pointer transition ease-in-out delay-100 mx-1" onClick={()=> handleLiClick(5)}>
+                    <h1 className="text-xl font-bold">Sample</h1>
+                    <p className="font-medium text-md border bg-White mx-12">Learn more</p>
+                </li><li className="hover:opacity-90 hover:cursor-pointer transition ease-in-out delay-100 mx-1" onClick={()=> handleLiClick(5)}>
                     <img className="w-[40vw]" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" alt="team member" />
-                    <h1 className="text-xl font-bold">Tim Cook</h1>
-                    <p className="font-medium text-md">CEO</p>
-                </li>
-                <li className="hover:opacity-90 hover:cursor-pointer transition ease-in-out delay-100 mx-1" onClick={()=> handleLiClick(6)}>
+                    <h1 className="text-xl font-bold">Sample</h1>
+                    <p className="font-medium text-md border bg-White mx-12">Learn more</p>
+                </li><li className="hover:opacity-90 hover:cursor-pointer transition ease-in-out delay-100 mx-1" onClick={()=> handleLiClick(6)}>
                     <img className="w-[40vw]" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" alt="team member" />
-                    <h1 className="text-xl font-bold">Tim Cook</h1>
-                    <p className="font-medium text-md">CEO</p>
+                    <h1 className="text-xl font-bold">Sample</h1>
+                    <p className="font-medium text-md border bg-White mx-12">Learn more</p>
                 </li>
             </ul>
             {display2}

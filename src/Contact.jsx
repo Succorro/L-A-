@@ -2,12 +2,12 @@
 function Contact() {
   return (
     <div className="bg-White flex flex-col items-center font-libre font-extrabold ">
-        <div className="bg-Nav h-[30vh] w-full">
-            <h1 className="text-5xl mt-32 font-bold text-White">Contact Us</h1>
+        <div className="bg-Blue h-[50vh] w-full flex justify-center pt-20">
+            <h1 className="text-6xl mt-28 font-bold text-White">Contact Us</h1>
         </div>
-        <div className="flex flex-col text-start w-full text-slate-700 ml-20 mt-10">
-            <h1 className="text-3xl">Have any Questions?</h1>
-            <h1 className="text-3xl">We&apos;re <span className="underline">here to help</span></h1>
+        <div className="flex flex-col text-start w-full text-slate-700 ml-20 mt-12">
+            <h1 className="text-4xl">Your immigration experts</h1>
+            <h1 className="text-xl mt-5 max-w-[92vw]">With 10+ years of experience, our team is ready and able to help with your questions.</h1>
         </div>
         <div className="flex flex-row text-start w-full text-slate-700 my-20 items-center justify-between">
             <div className="flex flex-col ml-10">
@@ -47,9 +47,11 @@ function Contact() {
                 <p className="font-bold  my-3">Sunday: <span className="ml-1">Closed</span></p>
             </div>
         </div>
-        <div className="flex flex-col text-center w-full text-slate-700 mt-5">
-            <h1 className="text-3xl">Follow Our Socials</h1>
-        </div>
+        {/* <div className="w-full flex justify-center px-20 mt-10">
+            <div className="border h-1 w-full bg-Blue"></div>
+            <div className="border h-2 w-4 bg-Gold rounded-xl -my-0.5 mx-5"></div>
+            <div className="border h-1 w-full bg-Blue"></div>
+        </div> */}
         <div className='flex justify-center mt-10 mb-5' id="socials">
             <a className="w-16" href=""><img src="/instagram.png" alt="" /></a>
             <a className="w-16" href=""><img src="/facebook.png" alt="" /></a>

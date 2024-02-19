@@ -4,7 +4,7 @@ import {Navbar, NavbarBrand, NavbarMenuToggle,NavbarMenuItem, NavbarMenu, Navbar
 
 function Navigation() {
   return (
-    <Navbar shouldHideOnScroll className="bg-transparent -my-10">
+    <Navbar shouldHideOnScroll className="bg-gradient-to-b from-Nav via-Nav to-transparent -my-8">
           <NavbarContent className="sm:hidden pr-3" justify="center">
             <NavbarBrand>
               <Link to='/'>

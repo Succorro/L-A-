@@ -2,27 +2,27 @@ import { Link } from "react-router-dom"
 function Home() {
   const servicesArray = [
     {
-      title: 'title', 
+      title: 'value', 
       image: 'img'
     },
     {
-      title: 'title', 
+      title: 'value', 
       image: 'img'
     },
     {
-      title: 'title', 
+      title: 'value', 
       image: 'img'
     },
     {
-      title: 'title', 
+      title: 'value', 
       image: 'img'
     },
     {
-      title: 'title', 
+      title: 'value', 
       image: 'img'
     },
     {
-      title: 'title', 
+      title: 'value', 
       image: 'img'
     },
   ]
@@ -38,12 +38,17 @@ function Home() {
           <h2 className="absolute text-3xl text-White font-dark my-96">Immigration Law</h2>
         </div>
       </section>
+      <div className="h-[50vh] mt-10 md:mt-0 flex flex-wrap justify-start items-center mx-10">
+        <h1 className="text-3xl font-bold text-start text-slate-700 md:-mb-10">Our Experience</h1>
+        <p className="text-md text-start">Susana B. Luna is an experienced immigration attorney dedicated to serving clients with integrity and compassion. With a commitment to excellence, Susana brings a wealth of knowledge and expertise to her practice. Susana is fluent in Spanish, ensuring effective communication with Spanish-speaking clients.</p>
+        <Link className=" w-32 px-3 py-1 mx-auto text-White rounded-2xl font-semibold bg-Blue" to='/services'><button>Services</button></Link>
+      </div>
+      <img className="mt-10" src="/lawconvo.jpg" alt="" />
 
       <div className="h-[70vh] mt-20 md:mt-0 flex flex-row justify-between items-center ">
         <div className="flex flex-col m-10">
-          <h1 className=" mb-10 text-3xl font-bold text-start text-slate-700">Our Experience</h1>
-          <p className="text-md text-start">Susana B. Luna is an experienced immigration attorney dedicated to serving clients with integrity and compassion. With a commitment to excellence, Susana brings a wealth of knowledge and expertise to her practice. Susana is fluent in Spanish, ensuring effective communication with Spanish-speaking clients.</p>
-          <Link className=" w-32 px-3 mt-5 py-1 mx-auto text-White rounded-2xl font-semibold bg-Blue" to='/services'><button>Services</button></Link>
+          <h1 className=" mb-10 text-3xl font-bold text-start text-slate-700">Our Team</h1>
+          <p className="text-md text-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error ea esse obcaecati. Ipsum inventore rerum fugiat reprehenderit sapiente quisquam non. Architecto illum aut deserunt cupiditate laborum molestiae, dolorem quam maxime.</p>
         </div>
         <img className="w-[40vh] m-5" src="/lawconvo.jpg" alt="" />
       </div>
@@ -67,17 +72,6 @@ function Home() {
             })}
         </ul>
       </section>
-      <div className="w-full flex justify-end items-center mt-10 h-[40vh] bg-[url('/lawconvo.jpg')] bg-cover mb-40">
-        <div className="flex flex-col items-end bg-White mr-5 py-5 px-3 opacity-90">
-          <p className="w-[40vw]  text-slate-700">We are committed to protecting your rights as an immigrant and uniting your family together.</p>
-          <Link className="bg-slate-900 text-white mt-5 font-semibold mx-auto text-md px-6 py-2 rounded-3xl hover:bg-blue-900 hover:text-white transition ease-in-out duration-50 delay-100" to='/team'>
-            <button >
-              Get to know the team
-            </button>
-          </Link>
-
-        </div>
-      </div>
     </div>
   )
 }
