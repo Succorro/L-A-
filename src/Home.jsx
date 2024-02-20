@@ -2,28 +2,28 @@ import { Link } from "react-router-dom"
 function Home() {
   const servicesArray = [
     {
-      title: 'value', 
-      image: 'img'
+      title: 'Empathy', 
+      image: '/gavel1.png'
     },
     {
-      title: 'value', 
-      image: 'img'
+      title: 'Integrity', 
+      image: '/handshake.png'
     },
     {
-      title: 'value', 
-      image: 'img'
+      title: 'Excellence', 
+      image: '/award.png'
     },
     {
-      title: 'value', 
-      image: 'img'
+      title: 'Advocacy', 
+      image: '/group.png'
     },
     {
-      title: 'value', 
-      image: 'img'
+      title: 'Responsiveness', 
+      image: '/target.png'
     },
     {
-      title: 'value', 
-      image: 'img'
+      title: 'Trust', 
+      image: '/shield.png'
     },
   ]
   return (
@@ -60,10 +60,10 @@ function Home() {
         </div>
         <ul id="group" className="flex flex-col md:grid md:grid-cols-3 mx-10">
             {servicesArray.map((obj, index) => {
-              const {title} = obj
+              const {title, image} = obj
               return <li key={index} className="flex flex-col m-2  sm:p-5 items-center p-2">
                       <picture className="justify-center">
-                          <img src='/Gavel.png' style={{width: "60px"}} alt="pic" />
+                          <img src={image} style={{width: "100px"}} alt="pic" />
                       </picture>
                       <div>
                           <h3 className="font-bold text-xl text-Blue">{title}</h3>

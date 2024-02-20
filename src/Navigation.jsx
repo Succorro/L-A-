@@ -1,13 +1,18 @@
 import {Link} from 'react-router-dom'
 import {Navbar, NavbarBrand, NavbarMenuToggle,NavbarMenuItem, NavbarMenu, NavbarContent, NavbarItem} from "@nextui-org/react";
-
+import { useState } from 'react';
 
 function Navigation() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <Navbar shouldHideOnScroll className="bg-gradient-to-b from-Nav via-Nav to-transparent -my-8">
+    <Navbar 
+        isMenuOpen={isMenuOpen}
+        onMenuOpenChange={setIsMenuOpen}
+        shouldHideOnScroll
+        className="bg-gradient-to-b from-Nav via-Nav to-transparent -my-8 transition ease-in-out delay-300">
           <NavbarContent className="sm:hidden pr-3" justify="center">
             <NavbarBrand>
-              <Link to='/'>
+              <Link to='/' onClick={()=>setIsMenuOpen(false)}>
                 <img src="" alt="L + A" />
               </Link>
             </NavbarBrand>
@@ -20,35 +25,41 @@ function Navigation() {
 
           <NavbarContent className="hidden sm:flex gap-4 text-White font-bold" justify="end">
             <NavbarBrand>
-            <Link to='/'>
+            <Link
+            onClick={()=>setIsMenuOpen(false)} to='/'>
               <img src="" alt="L + A" />
             </Link>
             </NavbarBrand>
             <NavbarItem>
-              <Link to='/'>
+              <Link
+              onClick={()=>setIsMenuOpen(false)} to='/'>
                 Home
               </Link>
             </NavbarItem>
             <NavbarItem isActive>
-              <Link to='/services' aria-current="page" color="warning">
+              <Link
+              onClick={()=>setIsMenuOpen(false)} to='/services' aria-current="page" color="warning">
                 Services
               </Link>
             </NavbarItem>
             <NavbarItem>
-              <Link to='/team'>
+              <Link
+              onClick={()=>setIsMenuOpen(false)} to='/team'>
                 Our Team
               </Link>
             </NavbarItem>
             <NavbarItem>
-              <Link to='/contact'>
+              <Link
+              onClick={()=>setIsMenuOpen(false)} to='/contact'>
                 Contact
               </Link>
             </NavbarItem>
           </NavbarContent>
 
-          <NavbarMenu  className="bg-transparent">
+          <NavbarMenu  className="bg-Nav">
             <NavbarMenuItem >
               <Link
+              onClick={()=>setIsMenuOpen(false)}
                 className="w-full text-4xl font-bold text-slate-600 hover:text-White transition ease-in-out delay-100 my-10"
                 to='/'
               >
@@ -57,6 +68,7 @@ function Navigation() {
             </NavbarMenuItem>
             <NavbarMenuItem>
               <Link
+              onClick={()=>setIsMenuOpen(false)}
                 className="w-full text-4xl font-bold text-slate-600 hover:text-White transition ease-in-out delay-100"
                 to='/services'
               >
@@ -65,6 +77,7 @@ function Navigation() {
             </NavbarMenuItem>
             <NavbarMenuItem>
               <Link
+              onClick={()=>setIsMenuOpen(false)}
                 className="w-full text-4xl font-bold text-slate-600 hover:text-White transition ease-in-out delay-100"
                 to='/team'
               >
@@ -73,6 +86,7 @@ function Navigation() {
             </NavbarMenuItem>
             <NavbarMenuItem>
               <Link
+              onClick={()=>setIsMenuOpen(false)}
                 className="w-full text-4xl font-bold text-slate-600 hover:text-White transition ease-in-out delay-100"
                 to='/contact'
               >

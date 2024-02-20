@@ -9,8 +9,8 @@ function Team() {
             case 1:
                 setDisplay1(
                     <div className="w-full p-4 my-5 bg-slate-200 rounded-lg flex flex-col text-start">
-                        <h1 className="text-slate-800 text-xl">Image: {value}</h1>
-                        <p className="text-slate-600">Insert information about a team member here</p>
+                        <h1 className="text-slate-800 text-xl">Susana B Luna</h1>
+                        <p className="text-slate-600">Experienced immigration attorney</p>
                     </div>
                 );
                 setDisplay2(<></>);
@@ -18,7 +18,7 @@ function Team() {
             case 2:
                 setDisplay1(
                     <div className="w-full p-4 my-5 bg-slate-200 rounded-lg flex flex-col text-start">
-                        <h1 className="text-slate-800 text-xl">Image: {value}</h1>
+                        <h1 className="text-slate-800 text-xl">Employee {value}</h1>
                         <p className="text-slate-600">Insert information about a team member here</p>
                     </div>
                 );
@@ -27,7 +27,7 @@ function Team() {
             case 3:
                 setDisplay1(
                     <div className="w-full p-4 my-5 bg-slate-200 rounded-lg flex flex-col text-start">
-                        <h1 className="text-slate-800 text-xl">Image: {value}</h1>
+                        <h1 className="text-slate-800 text-xl">Employee  {value}</h1>
                         <p className="text-slate-600">Insert information about a team member here</p>
                     </div>
                 );
@@ -36,7 +36,7 @@ function Team() {
             case 4:
                 setDisplay2(
                     <div className="w-full p-4 my-5 bg-slate-200 rounded-lg flex flex-col text-start">
-                        <h1 className="text-slate-800 text-xl">Image: {value}</h1>
+                        <h1 className="text-slate-800 text-xl">Employee  {value}</h1>
                         <p className="text-slate-600">Insert information about a team member here</p>
                     </div>
                 );
@@ -45,7 +45,7 @@ function Team() {
             case 5:
                 setDisplay2(
                     <div className="w-full p-4 my-5 bg-slate-200 rounded-lg flex flex-col text-start">
-                        <h1 className="text-slate-800 text-xl">Image: {value}</h1>
+                        <h1 className="text-slate-800 text-xl">Employee  {value}</h1>
                         <p className="text-slate-600">Insert information about a team member here</p>
                     </div>
                 );
@@ -54,7 +54,7 @@ function Team() {
             case 6:
                 setDisplay2(
                     <div className="w-full p-4 my-5 bg-slate-200 rounded-lg flex flex-col text-start">
-                        <h1 className="text-slate-800 text-xl">Image: {value}</h1>
+                        <h1 className="text-slate-800 text-xl">Employee  {value}</h1>
                         <p className="text-slate-600">Insert information about a team member here</p>
                     </div>
                 );

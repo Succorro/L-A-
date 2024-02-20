@@ -7,7 +7,7 @@ function Contact() {
         </div>
         <div className="flex flex-col text-start w-full text-slate-700 ml-20 mt-12">
             <h1 className="text-4xl">Your immigration experts</h1>
-            <h1 className="text-xl mt-5 max-w-[92vw]">With 10+ years of experience, our team is ready and able to help with your questions.</h1>
+            <h1 className="text-xl mt-5 max-w-[92vw]">With our experience, our team is ready and able to help with your questions.</h1>
         </div>
         <div className="flex flex-row text-start w-full text-slate-700 my-20 items-center justify-between">
             <div className="flex flex-col ml-10">
