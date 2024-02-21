@@ -9,7 +9,7 @@ function Navigation() {
         isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}
         shouldHideOnScroll
-        className="bg-gradient-to-b from-Nav via-Nav to-transparent -my-8 transition ease-in-out delay-300">
+        className="bg-gradient-to-b from-Nav via-Nav to-Nav -my-8 transition ease-in-out delay-300">
           <NavbarContent className="sm:hidden pr-3" justify="center">
             <NavbarBrand>
               <Link to='/' onClick={()=>setIsMenuOpen(false)}>
@@ -23,40 +23,45 @@ function Navigation() {
           </NavbarContent>
 
 
-          <NavbarContent className="hidden sm:flex gap-4 text-White font-bold" justify="end">
+          <NavbarContent className="hidden sm:flex gap-4 text-White  font-bold" justify="end">
             <NavbarBrand>
             <Link
+            className={linkStyle}
             onClick={()=>setIsMenuOpen(false)} to='/'>
               <img src="" alt="L + A" />
             </Link>
             </NavbarBrand>
             <NavbarItem>
               <Link
+              className={linkStyle}
               onClick={()=>setIsMenuOpen(false)} to='/'>
                 Home
               </Link>
             </NavbarItem>
             <NavbarItem isActive>
               <Link
+              className={linkStyle}
               onClick={()=>setIsMenuOpen(false)} to='/services' aria-current="page" color="warning">
                 Services
               </Link>
             </NavbarItem>
             <NavbarItem>
               <Link
+              className={linkStyle}
               onClick={()=>setIsMenuOpen(false)} to='/team'>
                 Our Team
               </Link>
             </NavbarItem>
             <NavbarItem>
               <Link
+              className={linkStyle}
               onClick={()=>setIsMenuOpen(false)} to='/contact'>
                 Contact
               </Link>
             </NavbarItem>
           </NavbarContent>
 
-          <NavbarMenu  className="bg-Nav">
+          <NavbarMenu  className="bg-Nav ">
             <NavbarMenuItem >
               <Link
               onClick={()=>setIsMenuOpen(false)}
@@ -97,4 +102,5 @@ function Navigation() {
         </Navbar>
   )
 }
+const linkStyle = 'text-White text-xl'
 export default Navigation

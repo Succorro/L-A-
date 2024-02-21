@@ -16,12 +16,12 @@ function Contact() {
                 <p className="font-bold p-3">Email: <a className=" font-semibold text-lg" href="mailto:susanaluna.law@gmail.com">susanaluna.law@gmail.com</a></p>           
             </div>
             <div className="flex flex-col mr-20">
-                <img className="w-40 mt-8 rounded-xl" src="/lawconvo.jpg" alt="office" />
+                <img className="w-[45vw] mt-8 rounded-xl" src="/lawconvo.jpg" alt="office" />
             </div>
         </div>
         <div className="flex flex-row text-start w-full text-slate-700 my-20 items-center justify-between">
             <div className="flex flex-col ml-12">
-                <img className="w-40 mt-8 rounded-xl" src="/lawconvo.jpg" alt="office" />
+                <img className="w-[45vw]  mt-8 rounded-xl" src="/lawconvo.jpg" alt="office" />
             </div>
             <div className="flex flex-col mr-20">
                 <h1 className='text-3xl font-bold p-3'>Office Contact</h1>
