@@ -6,14 +6,15 @@ function Navigation() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <Navbar 
+        isBlurred='false'
         isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}
         shouldHideOnScroll
-        className="bg-gradient-to-b from-Nav via-Nav to-Nav -my-8 transition ease-in-out delay-300">
+        className="bg-hidden -my-8 transition ease-in-out delay-300">
           <NavbarContent className="sm:hidden pr-3" justify="center">
             <NavbarBrand>
               <Link to='/' onClick={()=>setIsMenuOpen(false)}>
-                <img src="" alt="L + A" />
+                <img src="" alt="Logo" />
               </Link>
             </NavbarBrand>
           </NavbarContent>
@@ -28,7 +29,7 @@ function Navigation() {
             <Link
             className={linkStyle}
             onClick={()=>setIsMenuOpen(false)} to='/'>
-              <img src="" alt="L + A" />
+              <img src="" alt="Logo" />
             </Link>
             </NavbarBrand>
             <NavbarItem>

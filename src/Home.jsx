@@ -27,15 +27,14 @@ function Home() {
     },
   ]
   return (
-    <div className="text-lg flex flex-col items-center">
-
+    <div className=" text-lg flex flex-col items-center">
       <section id='cool' className="w-full h-[100vh]">
         <div id='nav' className="">
-          <img className="absolute h-[100vh] object-cover" src="/Statue.jpg" alt="" />
+          <img className="absolute min-h-[100vh] lg:max-h-[30vh] lg:w-full object-cover" src="/Statue.jpg" alt="" />
         </div>
-        <div className="flex flex-col items-center">
-          <h1 className="absolute text-5xl text-White font-dark my-72">Luna and Associates</h1>
-          <h2 className="absolute text-4xl text-White font-dark my-96">Immigration Law</h2>
+        <div className="flex flex-col items-center lg:ml-20">
+          <h1 className="absolute text-5xl text-White  font-bold my-72">Luna and Associates</h1>
+          <h2 className="absolute text-4xl text-White font-bold my-96">Immigration Law</h2>
         </div>
       </section>
       <div className="h-[50vh] mt-10 md:mt-0 flex flex-wrap justify-start items-center mx-10">
@@ -52,7 +51,6 @@ function Home() {
         </div>
         <img className="w-[40vh] m-5" src="/lawconvo.jpg" alt="" />
       </div>
-
 
       <section id="valuesSection" className=" bg-white w-full mb-20">
         <div id="text" className="flex flex-col items-center ">
