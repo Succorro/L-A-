@@ -25,7 +25,7 @@ module.exports = {
         libre: ["Libre Bodoni"],
       },
       colors: {
-        Blue: "#083248",
+        Blue: "#000b59",
         Alt: "#191970",
         White: "#F4FDFF",
         Dark: "#080708",

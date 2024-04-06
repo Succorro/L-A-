@@ -27,14 +27,17 @@ function Home() {
     },
   ]
   return (
-    <div className=" text-lg flex flex-col items-center">
-      <section id='cool' className="w-full h-[100vh]">
-        <div id='nav' className="">
-          <img className="absolute min-h-[100vh] lg:max-h-[30vh] lg:w-full object-cover" src="/Statue.jpg" alt="" />
+    <div className="my-16 text-lg flex flex-col items-center bg-White">
+      <section id='' className="w-full h-[100vh] flex flex-col md:flex-row md:items-center md:text-center mb-10">
+        <div id='' className="md:-mt-16 md:w-[33%] ">
+          <img className="md:h-[90vh] object-cover" src="/Statue.jpg" alt="" />
         </div>
-        <div className="flex flex-col items-center lg:ml-20">
-          <h1 className="absolute text-5xl text-White  font-bold my-72">Luna and Associates</h1>
-          <h2 className="absolute text-4xl text-White font-bold my-96">Immigration Law</h2>
+        <div className="flex flex-col items-center mt-10 md:mt-0 md:w-[33%]">
+          <h1 className="text-4xl text-Blue font-bold ">Susana B. Luna and Associates</h1>
+          <h2 className="text-3xl text-Blue font-bold ">Immigration Law</h2>
+        </div>
+        <div className="flex justify-center md:w-[33%]">
+          <img className="h-72" src="/Logo.png" alt="Logo" />
         </div>
       </section>
       <div className="h-[50vh] mt-10 md:mt-0 flex flex-wrap justify-start items-center mx-10">
