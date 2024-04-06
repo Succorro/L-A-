@@ -10,11 +10,11 @@ function Navigation() {
         isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}
         shouldHideOnScroll
-        className="bg-hidden -my-8 transition ease-in-out delay-50">
+        className="bg-White -my-8 transition ease-in-out delay-50">
           <NavbarContent className="sm:hidden pr-3" justify="center">
             <NavbarBrand>
               <Link to='/' onClick={()=>setIsMenuOpen(false)}>
-                <img style={{width: '70px'}} src="/Logo.png" alt="Logo" />
+                <img style={{width: '70px'}} src="/Logo2.png" alt="Logo" />
               </Link>
             </NavbarBrand>
           </NavbarContent>
@@ -24,7 +24,7 @@ function Navigation() {
           </NavbarContent>
 
 
-          <NavbarContent className="hidden sm:flex gap-4 text-White  font-bold" justify="end">
+          <NavbarContent className="hidden sm:flex gap-4 font-bold" justify="end">
             <NavbarBrand>
             <Link
             className={linkStyle}
@@ -50,7 +50,7 @@ function Navigation() {
               <Link
               className={linkStyle}
               onClick={()=>setIsMenuOpen(false)} to='/team'>
-                Our Team
+                Team Luna
               </Link>
             </NavbarItem>
             <NavbarItem>
@@ -62,11 +62,11 @@ function Navigation() {
             </NavbarItem>
           </NavbarContent>
 
-          <NavbarMenu  className="bg-Nav  transition ease-in-out delay-50 ">
+          <NavbarMenu  className="bg-White text-Blue transition ease-in-out delay-50 ">
             <NavbarMenuItem >
               <Link
               onClick={()=>setIsMenuOpen(false)}
-                className="w-full text-4xl font-bold text-slate-600 hover:text-White transition ease-in-out delay-100 my-10"
+                className="w-full text-4xl font-bold  hover:text-blue-300 transition ease-in-out delay-100 my-10"
                 to='/'
               >
                 Home
@@ -75,7 +75,7 @@ function Navigation() {
             <NavbarMenuItem>
               <Link
               onClick={()=>setIsMenuOpen(false)}
-                className="w-full text-4xl font-bold text-slate-600 hover:text-White transition ease-in-out delay-100"
+                className="w-full text-4xl font-bold  hover:text-blue-300 transition ease-in-out delay-100"
                 to='/services'
               >
                 Services
@@ -84,16 +84,16 @@ function Navigation() {
             <NavbarMenuItem>
               <Link
               onClick={()=>setIsMenuOpen(false)}
-                className="w-full text-4xl font-bold text-slate-600 hover:text-White transition ease-in-out delay-100"
+                className="w-full text-4xl font-bold  hover:text-blue-300 transition ease-in-out delay-100"
                 to='/team'
               >
-                Our Team
+                Team Luna
               </Link>
             </NavbarMenuItem>
             <NavbarMenuItem>
               <Link
               onClick={()=>setIsMenuOpen(false)}
-                className="w-full text-4xl font-bold text-slate-600 hover:text-White transition ease-in-out delay-100"
+                className="w-full text-4xl font-bold  hover:text-blue-300 transition ease-in-out delay-100"
                 to='/contact'
               >
                 Contact
@@ -103,5 +103,5 @@ function Navigation() {
         </Navbar>
   )
 }
-const linkStyle = 'text-White text-xl'
-export default Navigation
+const linkStyle = 'text-Blue text-xl hover:text-blue-300 transition ease-in-out delay-100'
+export default Navigation 
