@@ -10,11 +10,11 @@ function Navigation() {
         isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}
         shouldHideOnScroll
-        className="bg-hidden -my-8 transition ease-in-out delay-300">
+        className="bg-hidden -my-8 transition ease-in-out delay-50">
           <NavbarContent className="sm:hidden pr-3" justify="center">
             <NavbarBrand>
               <Link to='/' onClick={()=>setIsMenuOpen(false)}>
-                <img src="" alt="Logo" />
+                <img style={{width: '70px'}} src="/Logo.png" alt="Logo" />
               </Link>
             </NavbarBrand>
           </NavbarContent>
@@ -29,7 +29,7 @@ function Navigation() {
             <Link
             className={linkStyle}
             onClick={()=>setIsMenuOpen(false)} to='/'>
-              <img src="" alt="Logo" />
+              <img style={{width: '70px'}} src="/Logo2.png" alt="Logo" />
             </Link>
             </NavbarBrand>
             <NavbarItem>
@@ -62,7 +62,7 @@ function Navigation() {
             </NavbarItem>
           </NavbarContent>
 
-          <NavbarMenu  className="bg-Nav ">
+          <NavbarMenu  className="bg-Nav  transition ease-in-out delay-50 ">
             <NavbarMenuItem >
               <Link
               onClick={()=>setIsMenuOpen(false)}

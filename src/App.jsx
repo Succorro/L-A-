@@ -1,10 +1,10 @@
 import './App.css'
 import { Routes, Route } from "react-router-dom";
 import Navigation from './Navigation';
-import Home from './Home';
-import Services from './Services';
-import Team from './Team';
-import Contact from './Contact';
+import Home from './pages/Home';
+import Services from './pages/Services';
+import Team from './pages/Team';
+import Contact from './pages/Contact';
 import Footer from './Footer';
 // import Projects from './Projects/Projects';
 // import About from './About/About';
