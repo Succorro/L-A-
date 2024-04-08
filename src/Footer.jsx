@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { animateScroll as scroll } from 'react-scroll'
 
 // eslint-disable-next-line react/prop-types
 const navLinks = [
@@ -43,7 +44,7 @@ function Footer() {
                                 <div className="flex flex-col mt-1 max-w-full w-[502px]">
                                 <nav className="flex gap-5 max-md:flex-wrap max-md:max-w-full mx-auto">
                                     {navLinks.map((link, index) => (
-                                    <Link key={index} to={handleLinks(link.label)} className="text-violet-950 max-md:basis-full hover:cursor-pointer hover:underline hover:underline-offset-1 hover:decoration-Blue">{link.label}</Link>
+                                    <Link key={index} to={handleLinks(link.label)}  onClick={()=>scroll.scrollToTop()} className="text-violet-950 max-md:basis-full hover:cursor-pointer hover:underline hover:underline-offset-1 hover:decoration-Blue">{link.label}</Link>
                                     ))}
                                 </nav>
                                 <div className="self-center mt-9 text-center text-slate-900 text-opacity-40 max-md:max-w-full">
