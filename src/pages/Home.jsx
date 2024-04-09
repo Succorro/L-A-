@@ -26,6 +26,7 @@ function Home() {
       image: '/shield.png'
     },
   ]
+
   return (
     <div className="my-16 text-lg flex flex-col items-center bg-White">
       <section id='' className="w-full h-[100vh] flex flex-col md:flex-row md:items-center md:text-center mb-10">
@@ -40,24 +41,60 @@ function Home() {
           <img className="h-72" src="/Logo.png" alt="Logo" />
         </div>
       </section>
-      <div className="h-[50vh] mt-10 md:mt-0 flex flex-wrap justify-start items-center mx-10">
-        <h1 className="text-3xl font-bold text-start text-slate-700 md:-mb-10">Our Experience</h1>
-        <p className="text-md font-bold text-slate-800 text-start">Susana B. Luna is an experienced immigration attorney dedicated to serving clients with integrity and compassion. With a commitment to excellence, Susana brings a wealth of knowledge and expertise to her practice. Susana is fluent in Spanish, ensuring effective communication with Spanish-speaking clients.</p>
-        <Link className=" w-32 px-4 py-2 mx-auto text-White rounded-3xl text-xl font-bold bg-Blue" to='/services'><button>Services</button></Link>
-      </div>
-      <img className="mt-10" src="/lawconvo.jpg" alt="" />
+      <section className="h-[50vh] mt-10 md:mt-0 flex flex-wrap justify-start items-center mx-10">
+        <h1 className="text-5xl font-bold text-start text-Blue md:-mb-10">Our Experience</h1>
+        <p className="text-md font-bold text-slate-800 text-start">
+        At Susana B. Luna and Associates, we are committed to transforming the complexity of immigration into a clear path toward the American dream. As a firm founded by an immigrant for immigrants, we intimately understand the challenges and intricacies of this journey. Our mission is to ease your way through this process with our extensive expertise and years of experience, ensuring that your journey to achieving the American dream is not just a possibility but a reality. Let us guide you home.
+        </p>
+        <Link className="mx-auto" to='/services'>
+          <button className="justify-center self-start px-7 py-5 mt-14 leading-6 text-center border-2 border-solid rounded-[100px] max-md:px-5 max-md:mt-10
+              bg-Blue border-White text-White
+              hover:text-Blue hover:bg-White hover:border-Blue
+              transition ease-in-out delay-100">Services</button>
+        </Link>
+      </section>
 
-      <div className="h-[70vh] mt-20 md:mt-0 flex flex-row justify-between items-center ">
-        <div className="flex flex-col m-10">
-          <h1 className="text-3xl font-bold text-start text-slate-700 mb-10">Our Team</h1>
-          <p className="text-md font-bold text-slate-800 text-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error ea esse obcaecati. Ipsum inventore rerum fugiat reprehenderit sapiente quisquam non. Architecto illum aut deserunt cupiditate laborum molestiae, dolorem quam maxime.</p>
-        </div>
-        <img className="w-[40vh] m-5" src="/lawconvo.jpg" alt="" />
-      </div>
+      <section className="flex gap-5 max-md:flex-col max-md:gap-0">
+          <div className="flex flex-col w-[63%] max-md:ml-0 max-md:w-full">
+            <div className="flex overflow-hidden relative flex-col grow justify-center items-center px-16 py-20 text-xl text-center text-white whitespace-nowrap min-h-[594px] max-md:px-5 max-md:mt-10 max-md:max-w-full">
+              <img
+                loading="lazy"
+                src="lawconvo.jpg"
+                className="object-cover absolute w-full"
+                alt="law convo"
+              />
+            </div>
+          </div>
+          <div className="flex flex-col ml-5 w-[37%] max-md:ml-0 max-md:w-full">
+            <div className="flex flex-col self-stretch px-5 my-auto font-medium text-Blue max-md:mt-10 max-md:max-w-full">
+              <h2 className="text-5xl font-bold tracking-tight leading-[52px] max-md:max-w-full">
+                Team Luna
+              </h2>
+              <p className="mt-9 text-2xl leading-8 text-slate-900 text-opacity-80 max-md:max-w-full">
+                Team Luna is committed and dedicated to helping you with your immigration needs.
+              </p>
+              <div className="flex flex-row justify-center gap-5">
+              <button className="justify-center self-start px-7 py-5 mt-14 leading-6 text-center border-2 border-solid rounded-[100px] max-md:px-5 max-md:mt-10
+              bg-Blue border-White text-White
+              hover:text-Blue hover:bg-White hover:border-Blue
+              transition ease-in-out delay-100">
+                Our Team
+              </button>
+              <button className="justify-center self-start px-7 py-5 mt-14 text-Blue leading-6 text-center border-2 border-Blue border-solid rounded-[100px] max-md:px-5 max-md:mt-10
+              hover:bg-Blue hover:border-White hover:text-White
+              transition ease-in-out delay-100">
+                Contact Us
+              </button>
 
-      <section id="valuesSection" className=" bg-White w-full mb-20">
+              </div>
+            </div>
+          </div>
+      </section>
+      <section id="valuesSection" className="mt-10  bg-White w-full mb-20">
         <div id="text" className="flex flex-col items-center ">
-          <span className="mt-10 mb-10 text-5xl font-bold text-Blue">Our Values</span>
+          <span className="mt-10 mb-10 text-5xl font-bold text-Blue">
+            Our Values
+          </span>
         </div>
         <ul id="group" className="grid grid-cols-2 md:grid md:grid-cols-3 mx-10">
             {valuesArray.map((obj, index) => {
