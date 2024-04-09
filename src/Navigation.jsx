@@ -62,17 +62,17 @@ function Navigation() {
             </NavbarItem>
           </NavbarContent>
 
-          <NavbarMenu  className="bg-White text-Blue transition ease-in-out delay-50 ">
-            <NavbarMenuItem >
+          <NavbarMenu  className="bg-White flex flex-col justify-center items-center text-Blue transition ease-in-out delay-50 ">
+            <NavbarMenuItem className='mb-10 -mt-40' >
               <Link
               onClick={()=>setIsMenuOpen(false)}
-                className="w-full text-4xl font-bold  hover:text-blue-300 transition ease-in-out delay-100 my-10"
+                className="w-full text-4xl font-bold hover:text-blue-700 transition ease-in-out delay-100 "
                 to='/'
               >
                 Home
               </Link>
             </NavbarMenuItem>
-            <NavbarMenuItem>
+            <NavbarMenuItem className='mb-10'>
               <Link
               onClick={()=>setIsMenuOpen(false)}
                 className="w-full text-4xl font-bold  hover:text-blue-300 transition ease-in-out delay-100"
@@ -81,7 +81,7 @@ function Navigation() {
                 Services
               </Link>
             </NavbarMenuItem>
-            <NavbarMenuItem>
+            <NavbarMenuItem className='mb-10'>
               <Link
               onClick={()=>setIsMenuOpen(false)}
                 className="w-full text-4xl font-bold  hover:text-blue-300 transition ease-in-out delay-100"
@@ -90,7 +90,7 @@ function Navigation() {
                 Team Luna
               </Link>
             </NavbarMenuItem>
-            <NavbarMenuItem>
+            <NavbarMenuItem className='mb-10'>
               <Link
               onClick={()=>setIsMenuOpen(false)}
                 className="w-full text-4xl font-bold  hover:text-blue-300 transition ease-in-out delay-100"

@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom"
 function Home() {
-  const servicesArray = [
+  const valuesArray = [
     {
       title: 'Empathy', 
-      image: '/gavel1.png'
+      image: '/empathy.png'
     },
     {
       title: 'Integrity', 
@@ -55,19 +55,19 @@ function Home() {
         <img className="w-[40vh] m-5" src="/lawconvo.jpg" alt="" />
       </div>
 
-      <section id="valuesSection" className=" bg-white w-full mb-20">
+      <section id="valuesSection" className=" bg-White w-full mb-20">
         <div id="text" className="flex flex-col items-center ">
           <span className="mt-10 mb-10 text-5xl font-bold text-Blue">Our Values</span>
         </div>
         <ul id="group" className="grid grid-cols-2 md:grid md:grid-cols-3 mx-10">
-            {servicesArray.map((obj, index) => {
+            {valuesArray.map((obj, index) => {
               const {title, image} = obj
               return <li key={index} className="flex flex-col m-2  sm:p-5 items-center p-2">
                       <picture className="justify-center">
                           <img src={image} style={{width: "100px"}} alt="pic" />
                       </picture>
                       <div>
-                          <h3 className="font-bold text-xl text-Blue">{title}</h3>
+                          <h3 className="font-bold text-xl mt-4 text-Blue">{title}</h3>
                       </div>
                     </li>
             })}
