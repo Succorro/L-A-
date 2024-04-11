@@ -29,20 +29,22 @@ function Home() {
 
   return (
     <div className="my-16 text-lg flex flex-col items-center bg-White">
-      <section id='' className="w-full h-[100vh] flex flex-col md:flex-row md:items-center md:text-center mb-10">
-        <div id='' className="md:-mt-16 md:w-[33%] ">
-          <img className="md:h-[90vh] object-cover" src="/Statue.jpg" alt="" />
+      
+      <section id='' className="w-full min-h-[90vh] flex flex-col md:flex-row md:items-center md:text-center mb-10 bg-Blue">
+        <div className="flex justify-center md:w-[33%]">
+          <img className="h-70" src="/Logo.png" alt="Logo" />
         </div>
         <div className="flex flex-col items-center mt-10 md:mt-0 md:w-[33%]">
-          <h1 className="text-4xl text-Blue font-bold ">Susana B. Luna and Associates</h1>
-          <h2 className="text-3xl text-Blue font-bold ">Immigration Law</h2>
+          <h1 className="text-4xl lg:text-6xl  mb-3 lg:mb-10 text-White font-bold ">Susana B. Luna and Associates</h1>
+          <h2 className="text-2xl text-White font-bold ">Immigration Law</h2>
         </div>
-        <div className="flex justify-center md:w-[33%]">
-          <img className="h-72" src="/Logo.png" alt="Logo" />
+        <div id='' className="md:-mt-16 md:w-[34%] ">
+          <img className="h-[43vh] md:h-[100vh] object-cover w-full md:-mt-0 " src="/Statue.jpg" alt="" />
         </div>
       </section>
-      <section className="h-[50vh] mt-10 md:mt-0 flex flex-wrap justify-start items-center mx-10">
-        <h1 className="text-5xl font-bold text-start text-Blue md:-mb-10">Our Experience</h1>
+
+      <section className=" mt-10 md:mt-0 flex flex-col justify-start items-center mx-10">
+        <h1 className="text-5xl mb-10 font-bold text-start text-Blue ">Our Experience</h1>
         <p className="text-md font-bold text-slate-800 text-start">
         At Susana B. Luna and Associates, we are committed to transforming the complexity of immigration into a clear path toward the American dream. As a firm founded by an immigrant for immigrants, we intimately understand the challenges and intricacies of this journey. Our mission is to ease your way through this process with our extensive expertise and years of experience, ensuring that your journey to achieving the American dream is not just a possibility but a reality. Let us guide you home.
         </p>
