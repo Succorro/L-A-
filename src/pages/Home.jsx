@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom"
+import {animateScroll as scroll } from 'react-scroll'
+
 function Home() {
   const valuesArray = [
     {
@@ -28,14 +30,14 @@ function Home() {
   ]
 
   return (
-    <div className="my-16 text-lg flex flex-col items-center bg-White">
+    <div className="mt-16 text-lg flex flex-col items-center bg-White">
       
-      <section id='' className="w-full min-h-[90vh] flex flex-col md:flex-row md:items-center md:text-center mb-10 bg-Blue">
-        <div className="flex justify-center md:w-[33%]">
-          <img className="h-70" src="/Logo.png" alt="Logo" />
+      <section id='hero' className="w-full min-h-[90vh] flex flex-col md:flex-row md:items-center md:text-center mb-10 bg-Blue">
+        <div className="flex flex-col items-center mb-16 md:mt-0 md:w-[66%]">
+        <div className="flex justify-center w-[80%] md:w-[50%] mb-10 mx-auto">
+          <img className="" src="/Logo.png" alt="Logo" />
         </div>
-        <div className="flex flex-col items-center mt-10 md:mt-0 md:w-[33%]">
-          <h1 className="text-4xl lg:text-6xl  mb-3 lg:mb-10 text-White font-bold ">Susana B. Luna and Associates</h1>
+          <h1 className="text-4xl lg:text-5xl  mb-3 lg:mb-10 text-White ">Susana B. Luna and Associates</h1>
           <h2 className="text-2xl text-White font-bold ">Immigration Law</h2>
         </div>
         <div id='' className="md:-mt-16 md:w-[34%] ">
@@ -43,26 +45,31 @@ function Home() {
         </div>
       </section>
 
-      <section className=" mt-10 md:mt-0 flex flex-col justify-start items-center mx-10">
-        <h1 className="text-5xl mb-10 font-bold text-start text-Blue ">Our Experience</h1>
-        <p className="text-md font-bold text-slate-800 text-start">
-        At Susana B. Luna and Associates, we are committed to transforming the complexity of immigration into a clear path toward the American dream. As a firm founded by an immigrant for immigrants, we intimately understand the challenges and intricacies of this journey. Our mission is to ease your way through this process with our extensive expertise and years of experience, ensuring that your journey to achieving the American dream is not just a possibility but a reality. Let us guide you home.
+      <section className=" my-10 sm:mb-20 md:mt-0 flex flex-col justify-start items-start mx-10">
+        <h1 className="text-4xl mb-1 mx-10 font-bold text-Blue md:mt-3">Who We Are</h1>
+        <div className="h-0.5 mx-10 w-[10vw] bg-Blue opacity-60 mb-10 "></div>
+        
+        <p className="text-xl text-slate-700 text-start mb-4 mx-10">
+        At Susana B. Luna and Associates, we are committed to transforming the complexity of immigration into a clear path toward the American dream. As a firm founded by an immigrant for immigrants, we intimately understand the challenges and intricacies of this journey. 
         </p>
-        <Link className="mx-auto" to='/services'>
+        <p className="text-xl text-slate-700 text-start mx-10">
+        Our mission is to ease your way through this process with our extensive expertise and years of experience, ensuring that your journey to achieving the American dream is not just a possibility but a reality. Let us guide you home.
+        </p>
+        <Link className="mx-auto" to='/services' onClick={() => scroll.scrollToTop()}> 
           <button className="justify-center self-start px-7 py-5 mt-14 leading-6 text-center border-2 border-solid rounded-[100px] max-md:px-5 max-md:mt-10
               bg-Blue border-White text-White
               hover:text-Blue hover:bg-White hover:border-Blue
               transition ease-in-out delay-100">Services</button>
         </Link>
       </section>
-
-      <section className="flex gap-5 max-md:flex-col max-md:gap-0">
-          <div className="flex flex-col w-[63%] max-md:ml-0 max-md:w-full">
-            <div className="flex overflow-hidden relative flex-col grow justify-center items-center px-16 py-20 text-xl text-center text-white whitespace-nowrap min-h-[594px] max-md:px-5 max-md:mt-10 max-md:max-w-full">
+      <div className="h-0.5 w-[90vw] bg-Blue opacity-20 mb-10 "></div>
+      <section className="flex w-full gap-5 max-md:flex-col max-md:gap-0 bg-White pb-24">
+          <div className="flex flex-col w-[60%] max-md:ml-0 max-md:w-full">
+            <div className="flex overflow-hidden relative flex-col grow justify-center items-center py-20 text-xl text-center text-white whitespace-nowrap  max-md:max-w-full">
               <img
                 loading="lazy"
                 src="lawconvo.jpg"
-                className="object-cover absolute w-full"
+                className="h-[50vh] object-cover w-full"
                 alt="law convo"
               />
             </div>
@@ -72,27 +79,31 @@ function Home() {
               <h2 className="text-5xl font-bold tracking-tight leading-[52px] max-md:max-w-full">
                 Team Luna
               </h2>
-              <p className="mt-9 text-2xl leading-8 text-slate-900 text-opacity-80 max-md:max-w-full">
-                Team Luna is committed and dedicated to helping you with your immigration needs.
+              <p className="mt-9 text-xl leading-8 text-slate-700 max-md:max-w-full">
+                Team Luna is committed and dedicated to helping you with your legal immigration needs.
               </p>
               <div className="flex flex-row justify-center gap-5">
-              <button className="justify-center self-start px-7 py-5 mt-14 leading-6 text-center border-2 border-solid rounded-[100px] max-md:px-5 max-md:mt-10
-              bg-Blue border-White text-White
-              hover:text-Blue hover:bg-White hover:border-Blue
-              transition ease-in-out delay-100">
-                Our Team
-              </button>
-              <button className="justify-center self-start px-7 py-5 mt-14 text-Blue leading-6 text-center border-2 border-Blue border-solid rounded-[100px] max-md:px-5 max-md:mt-10
-              hover:bg-Blue hover:border-White hover:text-White
-              transition ease-in-out delay-100">
-                Contact Us
-              </button>
+                <Link to='/team' onClick={() => scroll.scrollToTop()}>
+                  <button className="justify-center self-start px-7 py-5 mt-14 leading-6 text-center border-2 border-solid rounded-[100px] max-md:px-5 max-md:mt-10
+                  bg-Blue border-White text-White
+                  hover:text-Blue hover:bg-White hover:border-Blue
+                  transition ease-in-out delay-200 ">
+                    Our Team
+                  </button>
+                </Link>
+              <Link to='/contact' onClick={() => scroll.animateTopScroll()}>
+                <button className="justify-center self-start px-7 py-5 mt-14 text-Blue leading-6 text-center text-xl underline decoration-Blue max-md:px-5 max-md:mt-10
+                hover:no-underline
+                transition ease-in-out delay-100">
+                  Contact Us
+                </button>
+              </Link>
 
               </div>
             </div>
           </div>
       </section>
-      <section id="valuesSection" className="mt-10  bg-White w-full mb-20">
+      <section id="valuesSection" className="mb-10  bg-White w-full">
         <div id="text" className="flex flex-col items-center ">
           <span className="mt-10 mb-10 text-5xl font-bold text-Blue">
             Our Values
