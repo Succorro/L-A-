@@ -24,7 +24,7 @@ function Navigation() {
           </NavbarContent>
 
 
-          <NavbarContent className="hidden sm:flex gap-4 font-bold" justify="end">
+          <NavbarContent className="hidden w-full sm:flex md:gap-20 font-bold ">
             <NavbarBrand>
             <Link
             className={linkStyle}
@@ -48,14 +48,14 @@ function Navigation() {
             </NavbarItem>
             <NavbarItem>
               <Link
-              className={linkStyle}
+              className=' lg:-mr-16 text-Blue text-xl hover:text-blue-700 transition ease-in-out delay-100'
               onClick={()=>setIsMenuOpen(false)} to='/team'>
                 Team Luna
               </Link>
             </NavbarItem>
             <NavbarItem>
               <Link
-              className={linkStyle}
+              className='lg:-mr-40 text-Blue text-xl hover:text-blue-700 transition ease-in-out delay-100'
               onClick={()=>setIsMenuOpen(false)} to='/contact'>
                 Contact
               </Link>
@@ -75,7 +75,7 @@ function Navigation() {
             <NavbarMenuItem className='mb-10'>
               <Link
               onClick={()=>setIsMenuOpen(false)}
-                className="w-full text-4xl font-bold  hover:text-blue-300 transition ease-in-out delay-100"
+                className="w-full text-4xl font-bold  hover:text-blue-700 transition ease-in-out delay-100"
                 to='/services'
               >
                 Services
@@ -84,7 +84,7 @@ function Navigation() {
             <NavbarMenuItem className='mb-10'>
               <Link
               onClick={()=>setIsMenuOpen(false)}
-                className="w-full text-4xl font-bold  hover:text-blue-300 transition ease-in-out delay-100"
+                className="w-full text-4xl font-bold  hover:text-blue-700 transition ease-in-out delay-100"
                 to='/team'
               >
                 Team Luna
@@ -93,7 +93,7 @@ function Navigation() {
             <NavbarMenuItem className='mb-10'>
               <Link
               onClick={()=>setIsMenuOpen(false)}
-                className="w-full text-4xl font-bold  hover:text-blue-300 transition ease-in-out delay-100"
+                className="w-full text-4xl font-bold  hover:text-blue-700 transition ease-in-out delay-100"
                 to='/contact'
               >
                 Contact
@@ -103,5 +103,5 @@ function Navigation() {
         </Navbar>
   )
 }
-const linkStyle = 'text-Blue text-xl hover:text-blue-300 transition ease-in-out delay-100'
+const linkStyle = 'text-Blue text-xl hover:text-blue-700 transition ease-in-out delay-100'
 export default Navigation 

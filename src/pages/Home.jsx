@@ -49,10 +49,10 @@ function Home() {
         <h1 className="text-4xl mb-1 mx-10 font-bold text-Blue md:mt-3">Who We Are</h1>
         <div className="h-0.5 mx-10 w-[10vw] bg-Blue opacity-60 mb-10 "></div>
         
-        <p className="text-xl text-slate-700 text-start mb-4 mx-10">
+        <p className="text-xl text-slate-700 text-start mb-4 sm:mx-10">
         At Susana B. Luna and Associates, we are committed to transforming the complexity of immigration into a clear path toward the American dream. As a firm founded by an immigrant for immigrants, we intimately understand the challenges and intricacies of this journey. 
         </p>
-        <p className="text-xl text-slate-700 text-start mx-10">
+        <p className="text-xl text-slate-700 text-start sm:mx-10">
         Our mission is to ease your way through this process with our extensive expertise and years of experience, ensuring that your journey to achieving the American dream is not just a possibility but a reality. Let us guide you home.
         </p>
         <Link className="mx-auto" to='/services' onClick={() => scroll.scrollToTop()}> 
