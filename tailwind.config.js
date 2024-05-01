@@ -21,8 +21,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        catamaran: ["Catamaran"],
-        libre: ["Libre Bodoni"],
+        merriweather: ["Merriweather"],
       },
       colors: {
         Blue: "#0A145F",

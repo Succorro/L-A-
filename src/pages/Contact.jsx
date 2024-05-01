@@ -1,9 +1,9 @@
 
 function Contact() {
   return (
-    <div className="bg-White flex flex-col items-center font-libre font-extrabold ">
-        <div className="bg-Blue h-[50vh] w-full flex justify-center pt-20">
-            <h1 className="text-6xl mt-28 font-bold text-White">Contact Us</h1>
+    <div className="bg-White flex flex-col items-center">
+        <div className="bg-Blue h-[50vh] w-full flex justify-center pt-10">
+            <h1 className="text-5xl mt-20 text-White">Contact Us</h1>
         </div>
         <div className="flex flex-col text-start w-full text-slate-700 ml-20 mt-12">
             <h1 className="text-4xl">Your immigration experts</h1>
@@ -47,11 +47,6 @@ function Contact() {
                 <p className="font-bold  my-3">Sunday: <span className="ml-1">Closed</span></p>
             </div>
         </div>
-        {/* <div className="w-full flex justify-center px-20 mt-10">
-            <div className="border h-1 w-full bg-Blue"></div>
-            <div className="border h-2 w-4 bg-Gold rounded-xl -my-0.5 mx-5"></div>
-            <div className="border h-1 w-full bg-Blue"></div>
-        </div> */}
         <div className='flex justify-center mt-10 mb-5' id="socials">
             <a className="w-16" href=""><img src="/instagram.png" alt="" /></a>
             <a className="w-16" href=""><img src="/facebook.png" alt="" /></a>

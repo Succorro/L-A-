@@ -7,12 +7,10 @@ import Team from './pages/Team';
 import Contact from './pages/Contact';
 import Footer from './Footer';
 import Temp from './Temp';
-// import Projects from './Projects/Projects';
-// import About from './About/About';
 
 function App() {
   return ( 
-    <div className="w-full h-[100vh] bg-White font-libre">
+    <div className="w-full h-[100vh] bg-White font-merriweather">
       <Temp/>
       {/* <Navigation />
       <Routes>

@@ -45,9 +45,9 @@ function Home() {
         </div>
       </section>
 
-      <section className=" my-10 sm:mb-20 md:mt-0 flex flex-col justify-start items-start mx-10">
+      <section id="about" className=" my-10 sm:mb-20 md:mt-0 flex flex-col justify-start items-start mx-10">
         <h1 className="text-4xl mb-1 mx-10 font-bold text-Blue md:mt-3">Who We Are</h1>
-        <div className="h-0.5 mx-10 w-[10vw] bg-Blue opacity-60 mb-10 "></div>
+        <div className="h-0.5 mx-10 w-[40vw] sm:w-[35vw] md:w-[30vw] lg:w-[20vw] bg-Blue opacity-60 mb-10 "></div>
         
         <p className="text-xl text-slate-700 text-start mb-4 sm:mx-10">
         At Susana B. Luna and Associates, we are committed to transforming the complexity of immigration into a clear path toward the American dream. As a firm founded by an immigrant for immigrants, we intimately understand the challenges and intricacies of this journey. 
@@ -57,15 +57,17 @@ function Home() {
         </p>
         <Link className="mx-auto" to='/services' onClick={() => scroll.scrollToTop()}> 
           <button className="justify-center self-start px-7 py-5 mt-14 leading-6 text-center border-2 border-solid rounded-[100px] max-md:px-5 max-md:mt-10
-              bg-Blue border-White text-White
-              hover:text-Blue hover:bg-White hover:border-Blue
-              transition ease-in-out delay-100">Services</button>
+            bg-Blue border-White text-White
+            transition duration-300 ease-in-out
+            hover:text-Blue hover:bg-White hover:border-Blue">Services</button>
         </Link>
       </section>
-      <div className="h-0.5 w-[90vw] bg-Blue opacity-20 mb-10 "></div>
-      <section className="flex w-full gap-5 max-md:flex-col max-md:gap-0 bg-White pb-24">
-          <div className="flex flex-col w-[60%] max-md:ml-0 max-md:w-full">
-            <div className="flex overflow-hidden relative flex-col grow justify-center items-center py-20 text-xl text-center text-white whitespace-nowrap  max-md:max-w-full">
+
+      <div className="h-0.5 w-[90vw] bg-Blue opacity-20 mb-20 "></div>
+
+      <section id='team' className="flex w-full gap-5 max-md:flex-col max-md:gap-0 bg-slate-200 pb-32 md:pb-0 mb-10">
+          <div className="flex flex-col w-[60%] max-md:ml-0 max-md:w-full mg:h-full">
+            <div className="flex overflow-hidden relative flex-col grow justify-center items-center pb-20 md:pb-0 text-xl text-center text-white whitespace-nowrap  max-md:max-w-full">
               <img
                 loading="lazy"
                 src="lawconvo.jpg"
@@ -85,16 +87,16 @@ function Home() {
               <div className="flex flex-row justify-center gap-5">
                 <Link to='/team' onClick={() => scroll.scrollToTop()}>
                   <button className="justify-center self-start px-7 py-5 mt-14 leading-6 text-center border-2 border-solid rounded-[100px] max-md:px-5 max-md:mt-10
-                  bg-Blue border-White text-White
-                  hover:text-Blue hover:bg-White hover:border-Blue
-                  transition ease-in-out delay-200 ">
+            bg-Blue border-White text-White
+            transition duration-300 ease-in-out
+            hover:text-Blue hover:bg-White hover:border-Blue">
                     Our Team
                   </button>
                 </Link>
               <Link to='/contact' onClick={() => scroll.animateTopScroll()}>
                 <button className="justify-center self-start px-7 py-5 mt-14 text-Blue leading-6 text-center text-xl underline decoration-Blue max-md:px-5 max-md:mt-10
                 hover:no-underline
-                transition ease-in-out delay-100">
+                transition ease-in-out delay-100 duration-300">
                   Contact Us
                 </button>
               </Link>

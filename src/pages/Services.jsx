@@ -4,7 +4,7 @@ function Services() {
   return (
     <div className=" bg-White ">
         <div className="bg-Blue h-[50vh] pt-10">
-            <h1 className="mt-20 text-6xl text-White ">Our Services</h1>
+            <h1 className="mt-20 text-5xl text-White ">Our Services</h1>
             <p className="text-White text-xl m-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, consequuntur quasi libero fuga dolorem, minus esse placeat atque in consequatur asperiores iure ipsam eum fugit. Incidunt enim vero tempora tempore?</p>
         </div>
         <div className="flex justify-center w-full items-center px-20 py-10">
