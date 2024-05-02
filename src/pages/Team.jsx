@@ -29,8 +29,8 @@ function Team() {
         )
     })
   return (
-    <div className=" bg-slate-200 mt-20 min-h-[100vh]"> 
-        <div className="bg-Blue py-10">
+    <div className=" bg-slate-200 pt-16"> 
+        <div className="bg-Blue py-14">
             <h1 className="text-White text-5xl mb-10">Team Luna</h1>
             <div className="p-6 bg-white rounded-lg shadow-md mx-10 mb-10 lg:mx-32">
                 <p className="text-slate-700 text-lg font-bold mb-4">Our team at Susana B. Luna and Associates embodies a deep commitment to empowering individuals on their immigration journey. With a profound understanding of the complexities and nuances of immigration law, our diverse team of legal experts stands ready to navigate the legal landscape with precision and empathy.</p>
