@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom"
+import servicesData from '../data/servicesData'
 function Services() {
 
     const displayServices = servicesData.map((service, index) => {
         return (
             <div key={index}>
-                {service}
+                {service.name}
             </div>
         )
     })
@@ -33,6 +34,7 @@ function Services() {
             </div>
         </div>
         <div id='services list'>
+            <div>Family-Based Immigration</div>
             {displayServices}
         </div>
     </div>
