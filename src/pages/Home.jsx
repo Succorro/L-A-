@@ -35,13 +35,13 @@ function Home() {
       <section id='hero' className="w-full min-h-[90vh] flex flex-col md:flex-row md:items-center md:text-center mb-10 bg-Blue">
         <div className="flex flex-col items-center mb-16 md:mt-0 md:w-[66%]">
         <div className="flex justify-center w-[80%] md:w-[50%] mb-10 mx-auto">
-          <img className="" src="/Logo.png" alt="Logo" />
+          <img loading="lazy" className="" src="/Logo.png" alt="Logo" />
         </div>
           <h1 className="text-4xl lg:text-5xl  mb-3 lg:mb-10 text-White ">Susana B. Luna and Associates</h1>
           <h2 className="text-2xl text-White font-bold ">Immigration Law</h2>
         </div>
         <div id='' className="md:-mt-16 md:w-[34%] ">
-          <img className="h-[43vh] md:h-[100vh] object-cover w-full md:-mt-0 " src="/Statue.jpg" alt="" />
+          <img loading="lazy" className="h-[43vh] md:h-[100vh] object-cover w-full md:-mt-0 " src="/Statue.jpg" alt="" />
         </div>
       </section>
 

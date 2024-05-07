@@ -6,14 +6,14 @@ function Team() {
         return (
             <Sheet key={index}>
                 <SheetTrigger className="relative overflow-hidden md:my-10 mx-1 md:mx-3 mb-5"  >
-                    <img className="w-[70vw] md:w-[30vw] max-h-[404px] object-cover" src={person.image} alt="team member" />
+                    <img className="w-[70vw] md:w-[30vw] max-h-[404px] object-cover" src={person.image} alt="team member" loading="lazy"/>
                     <div id='content' className="absolute inset-0 flex flex-col justify-center items-center opacity-100 bg-Nav bg-opacity-0 transition-opacity duration-300 hover:opacity-100">
                         <p className=" text-3xl mt-80 text-White">{person.name}</p>
                     </div>
                 </SheetTrigger>
                 <SheetContent>
                     <SheetHeader className='mt-5'>
-                        <img className="h-[35vh] object-contain" src={person.image} alt="" />
+                        <img className="h-[35vh] object-contain" src={person.image} alt="" loading="lazy"/>
                         <SheetTitle className='text-Blue text-4xl'>
                             {person.name}
                         </SheetTitle>

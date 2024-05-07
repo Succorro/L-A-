@@ -14,7 +14,7 @@ function Navigation() {
           <NavbarContent className="sm:hidden pr-3" justify="center">
             <NavbarBrand>
               <Link to='/' onClick={()=>setIsMenuOpen(false)}>
-                <img style={{width: '70px'}} src="/Logo2.png" alt="Logo" />
+                <img style={{width: '70px'}} src="/Logo2.png" alt="Logo" loading="lazy"/>
               </Link>
             </NavbarBrand>
           </NavbarContent>
