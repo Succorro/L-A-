@@ -3,24 +3,36 @@ import servicesData from '../data/servicesData'
 function Services() {
 
     const displayServices = servicesData.map((service, index) => {
+        const {name} = service
         return (
             <div key={index}>
-                {service.name}
+                {name}
             </div>
         )
     })
   return (
     <div className=" bg-White ">
-        <div id='top' className="bg-Blue py-10 min-h-[100vh]">
-            <h1 className="mt-20 mb-10 text-5xl text-White ">Services</h1>
-            <div className="mx-5 sm:mx-10 flex flex-col sm:flex-row w-full items-center sm:justify-between tracking-wide text-start">
-                <h2 className=" sm:w-[40vw] text-White text-5xl sm:text-6xl leading-normal lg:leading-relaxed">Navigating through the complexities of immigration law is our specialty.</h2>
-                <Link to='/contact' className="flex  sm:w-[30vw]">
-                    <button className="px-7 py-5 mr-10 mt-14 border-2 border-solid rounded-[100px] max-md:px-5 max-md:mt-10 bg-White border-Blue text-Blue transition duration-300 ease-in-out
+        <section className="relative bg-Blue min-h-screen flex flex-col justify-start items-center pt-32">
+            <img
+                className="absolute inset-0 opacity-40 object-cover h-full lg:w-full lg:h-[100vh] z-0"
+                src="/books.jpg"
+                alt="books"
+                loading="lazy"
+            />
+            <div className="relative z-10 flex flex-col justify-center items-center text-center">
+                <h1 className="text-5xl text-White">Services</h1>
+                <p className="text-lg pt-10 text-start text-White px-20">
+                Navigating through the complexities of immigration law is our specialty.
+                </p>
+                <p className="text-lg pt-10 text-start text-White px-20 mb-5">
+                Have any questions?
+                </p>
+                <Link to='/contact' className="flex justify-center sm:w-[30vw]">
+                    <button className="px-7 py-5 border-2 border-solid rounded-[100px] max-md:px-5  bg-White border-Blue text-Blue transition duration-300 ease-in-out
                     hover:text-White hover:bg-Blue hover:border-White">Contact us</button>
                 </Link>
             </div>
-        </div>
+        </section>
 
         <div id='info' className="flex flex-col text-start mx-5 my-20">
             <h2 className="text-4xl text-slate-900 font-bold mt-5">Expertise</h2>
