@@ -29,14 +29,29 @@ function Team() {
         )
     })
   return (
-    <div className=" bg-slate-200 pt-16"> 
-        <div className="bg-Blue py-14">
-            <h1 className="text-White text-5xl mb-10">Team Luna</h1>
-            <div className="p-6 bg-white rounded-lg shadow-md mx-10 mb-10 lg:mx-32">
-                <p className="text-slate-700 text-lg font-bold mb-4">Our team at Susana B. Luna and Associates embodies a deep commitment to empowering individuals on their immigration journey. With a profound understanding of the complexities and nuances of immigration law, our diverse team of legal experts stands ready to navigate the legal landscape with precision and empathy.</p>
+    <div className=" bg-slate-200 "> 
+    <section className="relative bg-Blue min-h-screen flex flex-col justify-start items-center pt-32">
+            <img
+                className="absolute inset-0 opacity-40 object-cover h-full lg:w-full lg:h-[100vh] z-0"
+                src="/legalDoc.jpg"
+                alt="books"
+                loading="lazy"
+            />
+            <div className="relative z-10 flex flex-col justify-center items-center text-center">
+                <h1 className="text-5xl text-White">Team Luna</h1>
+                <p className="text-lg pt-10 text-start text-White px-20 lg:px-96">
+                Team Luna brings a wealth of knowledge and expertise, allowing us to deliver comprehensive and effective legal representation.
+                </p>
+            </div>
+        </section>
+        <div className="bg-White py-20">
+            <div className="flex flex-col text-start px-10 lg:px-60">
+                <h1 className="text-3xl text-Blue mb-10">Commitment to our clients</h1>
+                <p className="text-slate-700 text-lg  mb-4">Our team at Susana B. Luna and Associates embodies a deep commitment to empowering individuals on their immigration journey. With a profound understanding of the complexities and nuances of immigration law, our diverse team of legal experts stands ready to navigate the legal landscape with precision and empathy.</p>
             </div>
         </div>
         <section className="flex flex-col items-center p-10 text-slate-700 lg:mx-10">
+            <h1 className="text-Blue text-3xl ">Meet the Team</h1>
             <ul className="grid grid-cols-1 md:grid-cols-3">
                 {teamDisplay}
             </ul>

@@ -3,7 +3,7 @@ const TeamInfo = [
     name: "Susana B. Luna",
     title: "Attorney",
     bio: "Susana B. Luna was born in Mexico. Having immigrated to the United States at the age of 16, attorney Luna understands the immigration process firsthand. Owner and lead attorney of S.B. Luna & Associates. Located in Modesto, California. Specializing in immigration law since 2000, starting as a secretary for a local law firm and then as a legal assistant. Through great effort and commitment to school, she obtained a B.S. in Paralegal Studies and then promptly continued on to Law school. Graduating from Laurence Drivon School of Law (Humphreys College). Attorney Luna is a member in good standing with the American Immigration Lawyers Association (AILA). Attorney Luna is fully proficient in Spanish.",
-    image: "",
+    image: "/Logo.png",
   },
   {
     name: "Andrei Pineda",
