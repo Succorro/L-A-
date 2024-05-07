@@ -11,7 +11,7 @@ function Team() {
                         <p className=" text-3xl mt-80 text-White">{person.name}</p>
                     </div>
                 </SheetTrigger>
-                <SheetContent>
+                <SheetContent className='w-[100vw]'>
                     <SheetHeader className='mt-5'>
                         <img className="h-[35vh] object-contain" src={person.image} alt="" loading="lazy"/>
                         <SheetTitle className='text-Blue text-4xl'>

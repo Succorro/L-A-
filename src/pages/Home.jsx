@@ -65,7 +65,7 @@ function Home() {
 
       <div className="h-0.5 w-[90vw] bg-Blue opacity-20 mb-20 "></div>
 
-      <section id='team' className="flex w-full gap-5 max-md:flex-col max-md:gap-0 bg-slate-200 pb-32 md:pb-0 mb-10">
+      <section id='team' className="flex w-full gap-5 max-md:flex-col max-md:gap-0 bg-slate-200 pb-32 md:pb-0 mb-20">
           <div className="flex flex-col w-[60%] max-md:ml-0 max-md:w-full mg:h-full">
             <div className="flex overflow-hidden relative flex-col grow justify-center items-center pb-20 md:pb-0 text-xl text-center text-white whitespace-nowrap  max-md:max-w-full">
               <img
@@ -105,7 +105,7 @@ function Home() {
             </div>
           </div>
       </section>
-      <section id="valuesSection" className="mb-10  bg-White w-full">
+      <section id="valuesSection" className="mb-32  bg-White w-full">
         <div id="text" className="flex flex-col items-center ">
           <span className="mt-10 mb-10 text-5xl font-bold text-Blue">
             Our Values

@@ -28,7 +28,7 @@ function Footer() {
                             Susana B. Luna and Associates
                         </h2>
                         <p className="mt-10 text-base leading-7 text-opacity-70">
-                            Insert slogan here
+                        &quot;Ayudando a nuestra gente a realizar el Sueño Americano&quot;
                         </p>
                         <div className="flex gap-5 justify-between mt-11 text-lg mx-auto whitespace-nowrap max-md:mt-10">
                             <a className="w-16" href=""><img src="/instagram.png" alt="" /></a>

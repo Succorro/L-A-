@@ -14,7 +14,7 @@ Getting Started:
 
 To start using the Law Office Web Application, simply navigate to our website and explore the various features and services offered. If you're a new client, you can reach out via email or phone for access additional functionalities such as consultation scheduling, document submission and any other legal resource you may need.
 
-For any questions or feedback, please don't hesitate to contact our support team at [insert Email here]. We're excited to embark on this legal journey with you!
+For any questions or feedback, please don't hesitate to contact our support team at stevengbmv@gmail.com. We're excited to embark on this legal journey with you!
 
 Thank you for choosing our Law Office.
 

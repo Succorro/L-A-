@@ -23,11 +23,5 @@ const TeamInfo = [
     bio: "",
     image: "/melanie.jpg",
   },
-  {
-    name: "Claudia Vasquez",
-    title: "Receptionist",
-    bio: "Claudia Vasquez is a licensed and certified Interior Architecture professional, her passion is helping people create spaces where they feel comfortable and happy. A career that she practices in her free time as an independent contractor. Her passion for serving clients has led her to belong to the incredible team of Luna & Associates. Where she supports as a receptionist, welcoming clients with cordiality and respect, knowing that this is often the initial point of contact for those embarking on an immigration journey. Cassandra understands the significance of this first interaction and the impact it can have in putting clients at ease as they navigate the immigration process.",
-    image: "/claudia.jpg",
-  },
 ];
 export default TeamInfo;
