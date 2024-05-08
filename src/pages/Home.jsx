@@ -46,7 +46,7 @@ function Home() {
       </section>
 
       <section id="about" className=" my-10 sm:mb-20 md:mt-0 flex flex-col justify-start items-start mx-10">
-        <h1 className="text-4xl mb-1 mx-10 font-bold text-Blue md:mt-3">Who We Are</h1>
+        <h1 className="text-4xl mb-1 mx-10 font-bold text-Blue md:mt-3">About Us</h1>
         <div className="h-0.5 mx-10 w-[40vw] sm:w-[35vw] md:w-[30vw] lg:w-[20vw] bg-Blue opacity-60 mb-10 "></div>
         
         <p className="text-xl text-slate-700 text-start mb-4 sm:mx-10">

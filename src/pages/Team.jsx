@@ -2,11 +2,14 @@ import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTr
 import TeamInfo from "@/data/TeamInfo";
 
 function Team() {
-    const teamDisplay = TeamInfo.map((person, index) => {
+    const Susi = TeamInfo[0]
+    const data = TeamInfo.slice(1,4)
+    console.log(data)
+    const teamDisplay = data.map((person, index) => {
         return (
             <Sheet key={index}>
-                <SheetTrigger className="relative overflow-hidden md:my-10 mx-1 md:mx-3 mb-5"  >
-                    <img className="w-[70vw] md:w-[30vw] max-h-[404px] object-cover" src={person.image} alt="team member" loading="lazy"/>
+                <SheetTrigger className="relative overflow-hidden md:my-10 mx-1 md:mx-10 mb-5"  >
+                    <img className="w-[70vw] md:w-[20vw] max-h-[404px] object-cover" src={person.image} alt="team member" loading="lazy"/>
                     <div id='content' className="absolute inset-0 flex flex-col justify-center items-center opacity-100 bg-Nav bg-opacity-0 transition-opacity duration-300 hover:opacity-100">
                         <p className=" text-3xl mt-80 text-White">{person.name}</p>
                     </div>
@@ -51,7 +54,30 @@ function Team() {
             </div>
         </div>
         <section className="flex flex-col items-center p-10 text-slate-700 lg:mx-10">
-            <h1 className="text-Blue text-3xl ">Meet the Team</h1>
+            <h1 className="text-Blue text-4xl ">Meet Team Luna</h1>
+            <p>Click on an image for more information</p>
+            <Sheet>
+                <SheetTrigger className="relative overflow-hidden md:my-10 mx-1 md:mx-5 mb-5"  >
+                    <img className="w-[70vw] md:w-[20vw] max-h-[404px] object-cover" src={Susi.image} alt="team member" loading="lazy"/>
+                    <div id='content' className="absolute inset-0 flex flex-col justify-center items-center opacity-100 bg-Nav bg-opacity-0 transition-opacity duration-300 hover:opacity-100">
+                        <p className=" text-3xl mt-80 text-White">{Susi.name}</p>
+                    </div>
+                </SheetTrigger>
+                <SheetContent className='w-[100vw]'>
+                    <SheetHeader className='mt-5'>
+                        <img className="h-[35vh] object-contain" src={Susi.image} alt="" loading="lazy"/>
+                        <SheetTitle className='text-Blue text-4xl'>
+                            {Susi.name}
+                        </SheetTitle>
+                        <p className="font-bold text-slate-700">{Susi.title}</p>
+                        <div className=' max-h-full overflow-y-auto whitespace-normal'>
+                            <SheetDescription >
+                                {Susi.bio}
+                            </SheetDescription>
+                        </div>
+                    </SheetHeader>
+                </SheetContent>
+            </Sheet>
             <ul className="grid grid-cols-1 md:grid-cols-3">
                 {teamDisplay}
             </ul>
