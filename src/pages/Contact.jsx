@@ -17,7 +17,7 @@ function Contact() {
                 </p>
             </div>
         </section>
-        <div className="bg-White flex flex-col justify-center items-center text-center m-32">
+        <div className="bg-White flex flex-col justify-center items-center text-center my-32 mx-10">
             <h1 className="text-Blue text-5xl font-bold">The Luna Building</h1>
         </div>
         <section className="bg-White flex flex-col md:flex-row justify-center items-center text-start  px-20 mb-10">

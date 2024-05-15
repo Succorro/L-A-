@@ -33,7 +33,7 @@ function Team() {
     })
   return (
     <div className=" bg-slate-200 "> 
-    <section className="relative bg-Blue min-h-screen flex flex-col justify-start items-center pt-32">
+        <section className="relative bg-Blue min-h-screen flex flex-col justify-start items-center pt-32">
             <img
                 className="absolute inset-0 opacity-40 object-cover h-full lg:w-full lg:h-[100vh] z-0"
                 src="/legalDoc.jpg"
@@ -45,6 +45,8 @@ function Team() {
                 <p className="text-lg pt-10 text-start text-White px-20 lg:px-96">
                 Team Luna brings a wealth of knowledge and expertise, allowing us to deliver comprehensive and effective legal representation.
                 </p>
+                <a href="#teamSection" className=" mt-20 px-7 py-5 border-2 border-solid rounded-[100px] max-md:px-5  bg-Blue border-Blue text-White transition duration-300 ease-in-out
+                     hover:underline hover:border-White">Meet the Team</a>
             </div>
         </section>
         <div className="bg-White py-20">
@@ -53,8 +55,8 @@ function Team() {
                 <p className="text-slate-700 text-lg  mb-4">Our team at Susana B. Luna and Associates embodies a deep commitment to empowering individuals on their immigration journey. With a profound understanding of the complexities and nuances of immigration law, our diverse team of legal experts stands ready to navigate the legal landscape with precision and empathy.</p>
             </div>
         </div>
-        <section className="flex flex-col items-center p-10 text-slate-700 lg:mx-10">
-            <h1 className="text-Blue text-4xl ">Meet Team Luna</h1>
+        <section id="teamSection" className="flex flex-col items-center p-10 text-slate-700 lg:mx-10">
+            <h1 className="text-Blue text-4xl ">Team Luna</h1>
             <p>Click on an image for more information</p>
             <Sheet>
                 <SheetTrigger className="relative overflow-hidden md:my-10 mx-1 md:mx-5 mb-5"  >
