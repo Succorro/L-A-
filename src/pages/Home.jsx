@@ -49,16 +49,16 @@ function Home() {
         <h1 className="text-4xl mb-1 mx-10 font-bold text-Blue md:mt-3">About Us</h1>
         <div className="h-0.5 mx-10 w-[40vw] sm:w-[35vw] md:w-[30vw] lg:w-[20vw] bg-Blue opacity-60 mb-10 "></div>
         
-        <p className="text-xl text-slate-700 text-start mb-4 sm:mx-10">
+        <p className="text-xl text-slate-700 text-start mb-4 mx-10">
         At Susana B. Luna and Associates, we are committed to transforming the complexity of immigration into a clear path toward the American dream. As a firm founded by an immigrant for immigrants, we intimately understand the challenges and intricacies of this journey. 
         </p>
-        <p className="text-xl text-slate-700 text-start sm:mx-10">
+        <p className="text-xl text-slate-700 text-start mx-10">
         Our mission is to ease your way through this process with our extensive expertise and years of experience, ensuring that your journey to achieving the American dream is not just a possibility but a reality. Let us guide you home.
         </p>
         <Link className="mx-auto" to='/services' onClick={() => scroll.scrollToTop()}> 
           <button className="justify-center self-start px-7 py-5 mt-14 leading-6 text-center border-2 border-solid rounded-[100px] max-md:px-5 max-md:mt-10
             bg-Blue border-White text-White
-            transition duration-300 ease-in-out
+            transition ease-in-out duration-1000 delay-300 
             hover:text-Blue hover:bg-White hover:border-Blue">Services</button>
         </Link>
       </section>
@@ -81,7 +81,7 @@ function Home() {
               <h2 className="text-5xl font-bold tracking-tight leading-[52px] max-md:max-w-full">
                 Team Luna
               </h2>
-              <p className="mt-9 text-xl leading-8 text-slate-700 max-md:max-w-full">
+              <p className="mt-9 text-xl leading-8 text-slate-700 max-md:max-w-full md:mx-0 mx-20">
                 Team Luna is committed and dedicated to helping you with your legal immigration needs.
               </p>
               <div className="flex flex-row justify-center gap-5">
