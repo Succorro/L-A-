@@ -43,8 +43,8 @@ function Team() {
                 <p className="text-lg pt-10 text-start text-White px-20 lg:px-96">
                 Team Luna brings a wealth of knowledge and expertise, allowing us to deliver comprehensive and effective legal representation.
                 </p>
-                <a href="#teamSection" className=" mt-5 px-7 py-5 border-2 border-solid rounded-[100px] max-md:px-5  bg-Blue border-Blue text-White transition duration-300 ease-in-out
-                     hover:border-White">Meet the Team</a>
+                <a href="#teamSection" className=" px-7 py-5 border-2 border-solid rounded-[100px] max-md:px-5  bg-Blue border-Blue text-White transition duration-300 delay-100 ease-in-out
+                     hover:border-slate-200 hover:bg-slate-200 hover:text-Blue text-lg">Meet the Team</a>
             </div>
         </section>
         <div className="bg-White py-20">

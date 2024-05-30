@@ -59,7 +59,7 @@ function Home() {
           <button className="justify-center self-start px-7 py-5 mt-14 leading-6 text-center border-2 border-solid rounded-[100px] max-md:px-5 max-md:mt-10
             bg-Blue border-White text-White
             transition ease-in-out duration-1000 delay-300 
-            hover:text-Blue hover:bg-slate-100 hover:border-Blue">Services</button>
+            hover:text-Blue hover:bg-slate-200 hover:border-slate-200">Services</button>
         </Link>
       </section>
 
@@ -87,9 +87,9 @@ function Home() {
               <div className="flex flex-row justify-center gap-5">
                 <Link to='/team' onClick={() => scroll.scrollToTop()}>
                   <button className="justify-center self-start px-7 py-5 mt-14 leading-6 text-center border-2 border-solid rounded-[100px] max-md:px-5 max-md:mt-10
-            bg-Blue border-White text-White
+            bg-Blue border-Blue text-White
             transition duration-300 ease-in-out
-            hover:text-Blue hover:bg-White hover:border-Blue">
+            hover:text-Blue hover:bg-White hover:border-White">
                     Our Team
                   </button>
                 </Link>

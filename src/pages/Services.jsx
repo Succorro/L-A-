@@ -28,8 +28,8 @@ function Services() {
                 Have any questions?
                 </p>
                 <Link to='/contact' className="flex justify-center sm:w-[30vw]">
-                    <button className="px-7 py-5 border-2 border-solid rounded-[100px] max-md:px-5  bg-Blue border-Blue text-White transition duration-300 ease-in-out
-                     hover:border-White">Contact us</button>
+                    <button className="px-7 py-5 border-2 border-solid rounded-[100px] max-md:px-5  bg-Blue border-Blue text-White transition duration-300 delay-100 ease-in-out
+                     hover:border-slate-200 hover:bg-slate-200 hover:text-Blue text-lg">Contact us</button>
                 </Link>
             </div>
         </section>

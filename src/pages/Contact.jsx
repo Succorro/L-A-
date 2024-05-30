@@ -1,28 +1,6 @@
+import { contactData } from "@/data/contactData"
 
 function Contact() {
-    const contactData = [
-        {
-            title: 'Office Phone',
-            text: '(209) 409 - 8879',
-            href: "tel:+12094098879",
-            title2: "Susana's Phone",
-            text2: '(209) 204 - 0088',
-            href2: "tel:+12092040088",
-            image: '/phone.svg'
-        },
-        {
-            title: 'Email',
-            text: 'susanaluna.law@gmail.com',
-            href: "mailto:susanaluna.law@gmail.com",
-            image: '/email.svg'
-        },
-        {
-            title: 'Business Hours',
-            text: `Mon - Fri: 9am - 5pm`,
-            href: "https://www.google.com/maps/dir/?api=1&destination=Luna+and+Associates+Modesto+CA&travelmode=driving",
-            image: '/time.svg'
-        },
-    ]
     const displayContact = contactData.map(({title, text, href, image, title2, text2, href2}, index)=>{
         const underlineConditional = (index) =>  index <= 1 ? <div className="h-0.5 w-[50vw] md:w-[30vw] bg-White opacity-20 mt-10"></div> : <></>
         const busniessHoursConditional = (index) => index === 2 ? <p>Sat - Sun: Closed</p>: <></>
@@ -34,7 +12,7 @@ function Contact() {
                     </div>
                     <div className="flex flex-col justify-center">
                         <p className="font-semibold text-xl tracking-wide">{title}</p>
-                        <a className="hover:underline w-48" href={href} target="_blank">{text}</a>
+                        <a className="hover:underline w-48 mt-1" href={href} target="_blank">{text}</a>
                         <p className="font-semibold text-xl tracking-wide mt-3">{title2}</p>
                         <a className="hover:underline w-48" href={href2} target="_blank">{text2}</a>
                         {busniessHoursConditional(index)}
@@ -63,7 +41,7 @@ function Contact() {
         </section>
 
         <section className="flex flex-col">
-            <h1 className="text-Blue text-5xl font-bold my-10">The Luna Building</h1>
+            {/* <h1 className="text-White bg-Blue text-5xl font-bold py-10 ">The Luna Building</h1> */}
             <div className="flex flex-col md:flex-row">
                 <div className="flex flex-col bg-Blue text-White object-center justify-center items-center text-center w-full md:min-w-[60vw] max-h-[80vh] py-10">
                     <h3 className="mb-10 font-bold text-4xl ">Contact Us</h3>
@@ -75,7 +53,7 @@ function Contact() {
             </div>
         </section>
         <div className="flex flex-col items-center mx-auto justify-center py-20">
-            <p className="text-3xl text-slate-700 font-bold">Located in Downtown Modesto</p>
+            <p className="text-3xl text-slate-700 font-bold mb-5">Located in Downtown Modesto</p>
             <a className="text-lg  my-3 px-4 hover:underline" href="https://www.google.com/maps/dir/?api=1&destination=Luna+and+Associates+Modesto+CA&travelmode=driving" target="_blank" >1520 H St. Modesto, CA 95354</a>
             <a className="" href="https://www.google.com/maps/dir/?api=1&destination=Luna+and+Associates+Modesto+CA&travelmode=driving" target="_blank" >
                 <img className="w-[70vw] lg:w-[40vw] mt-5 rounded-xl" src="/Luna.jpeg" alt="office" loading="lazy"/>
