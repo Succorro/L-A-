@@ -2,7 +2,6 @@ import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTr
 import TeamInfo from "@/data/TeamInfo";
 
 function Team() {
-
     const teamDisplay = TeamInfo.map((person, index) => {
         return (
             <Sheet key={index}>
@@ -15,7 +14,7 @@ function Team() {
                 </SheetTrigger>
                 <SheetContent className='w-[100vw]'>
                     <SheetHeader className='mt-5'>
-                        <img className="h-[35vh] object-contain" src={person.image} alt="" loading="lazy"/>
+                        <img className="h-[35vh] object-contain" src={person.image2} alt="" loading="lazy"/>
                         <SheetTitle className='text-slate-900 text-4xl'>
                             {person.name}
                         </SheetTitle>
@@ -34,9 +33,9 @@ function Team() {
     <div className=" bg-Blue "> 
         <section className="relative bg-Blue min-h-screen flex flex-col justify-start items-center pt-32">
             <img
-                className="absolute inset-0 opacity-40 object-cover h-full lg:w-full lg:h-[100vh] z-0"
-                src="/legalDoc.jpg"
-                alt="books"
+                className="absolute inset-0 opacity-40 object-cover h-full lg:w-full lg:h-[100vh] mt-16 z-0"
+                src="/Luna and Associates Photos copy/DSC_9931-1.jpeg"
+                alt="Team header"
                 loading="lazy"
             />
             <div className="relative z-10 flex flex-col justify-center items-center text-center">
@@ -44,7 +43,7 @@ function Team() {
                 <p className="text-lg pt-10 text-start text-White px-20 lg:px-96">
                 Team Luna brings a wealth of knowledge and expertise, allowing us to deliver comprehensive and effective legal representation.
                 </p>
-                <a href="#teamSection" className=" mt-20 px-7 py-5 border-2 border-solid rounded-[100px] max-md:px-5  bg-Blue border-Blue text-White transition duration-300 ease-in-out
+                <a href="#teamSection" className=" mt-5 px-7 py-5 border-2 border-solid rounded-[100px] max-md:px-5  bg-Blue border-Blue text-White transition duration-300 ease-in-out
                      hover:underline hover:border-White">Meet the Team</a>
             </div>
         </section>

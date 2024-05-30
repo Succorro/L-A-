@@ -70,9 +70,9 @@ function Home() {
             <div className="flex overflow-hidden relative flex-col grow justify-center items-center pb-20 md:pb-0 text-xl text-center text-white whitespace-nowrap  max-md:max-w-full">
               <img
                 loading="lazy"
-                src="lawconvo.jpg"
-                className="h-[50vh] object-cover w-full"
-                alt="law convo"
+                src="/Luna and Associates Photos copy/DSC_9246.jpeg"
+                className="h-[80vh] lg:h-[100vh] object-cover object-bottom w-full"
+                alt="law building"
               />
             </div>
           </div>
@@ -82,7 +82,7 @@ function Home() {
                 Team Luna
               </h2>
               <p className="mt-9 text-xl leading-8 text-slate-700 max-md:max-w-full md:mx-0 mx-20">
-                Team Luna is committed and dedicated to helping you with your legal immigration needs.
+                Team Luna is committed and dedicated to helping you with your immigration needs.
               </p>
               <div className="flex flex-row justify-center gap-5">
                 <Link to='/team' onClick={() => scroll.scrollToTop()}>
@@ -100,7 +100,6 @@ function Home() {
                   Contact Us
                 </button>
               </Link>
-
               </div>
             </div>
           </div>
