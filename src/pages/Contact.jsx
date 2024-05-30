@@ -1,12 +1,56 @@
 
 function Contact() {
+    const contactData = [
+        {
+            title: 'Office Phone',
+            text: '(209) 409 - 8879',
+            href: "tel:+12094098879",
+            title2: "Susana's Phone",
+            text2: '(209) 204 - 0088',
+            href2: "tel:+12092040088",
+            image: '/phone.svg'
+        },
+        {
+            title: 'Email',
+            text: 'susanaluna.law@gmail.com',
+            href: "mailto:susanaluna.law@gmail.com",
+            image: '/email.svg'
+        },
+        {
+            title: 'Business Hours',
+            text: `Mon - Fri: 9am - 5pm`,
+            href: "https://www.google.com/maps/dir/?api=1&destination=Luna+and+Associates+Modesto+CA&travelmode=driving",
+            image: '/time.svg'
+        },
+    ]
+    const displayContact = contactData.map(({title, text, href, image, title2, text2, href2}, index)=>{
+        const underlineConditional = (index) =>  index <= 1 ? <div className="h-0.5 w-[50vw] md:w-[30vw] bg-White opacity-20 mt-10"></div> : <></>
+        const busniessHoursConditional = (index) => index === 2 ? <p>Sat - Sun: Closed</p>: <></>
+        return (
+            <div key={index} className="flex flex-col my-5 w-full items-center">
+                <div  className="flex flex-row ">
+                    <div className="bg-White rounded-full px-5 py-5 mx-5 max-h-[10vh]">
+                        <img className="w-10" src={image} alt="contact" />
+                    </div>
+                    <div className="flex flex-col justify-center">
+                        <p className="font-semibold text-xl tracking-wide">{title}</p>
+                        <a className="hover:underline w-48" href={href} target="_blank">{text}</a>
+                        <p className="font-semibold text-xl tracking-wide mt-3">{title2}</p>
+                        <a className="hover:underline w-48" href={href2} target="_blank">{text2}</a>
+                        {busniessHoursConditional(index)}
+                    </div>
+                </div>
+                {underlineConditional(index)}
+            </div>
+        )
+    })
   return (
     <div className="bg-White">
         <section className="relative bg-Blue min-h-screen flex flex-col justify-start items-center pt-32">
             <img
-                className="absolute inset-0 opacity-40 object-cover h-full lg:w-full lg:h-[100vh] z-0"
-                src="/Conference Room.jpg"
-                alt="conference room"
+                className="absolute inset-0 opacity-40 lg:object-cover w-full h-full -top-10 mt-10 lg:w-full lg:h-[100vh] z-0"
+                src="/Luna and Associates Photos copy/SL2.jpeg"
+                alt="luna building"
                 loading="lazy"
             />
             <div className="relative z-10 text-center">
@@ -17,33 +61,22 @@ function Contact() {
                 </p>
             </div>
         </section>
-        <div className="bg-White flex flex-col justify-center items-center text-center my-32 mx-10">
-            <h1 className="text-Blue text-5xl font-bold">The Luna Building</h1>
-        </div>
-        <section className="bg-White flex flex-col md:flex-row justify-center items-center text-start  px-20 mb-10">
-            <div className="relative rounded-xl bg-Blue text-White py-32 px-32 lg:px-20 w-[450px] h-[400px] flex flex-col mb-20 lg:mx-10">
-                <img className="absolute -top-10 rounded-xl left-40 lg:left-32 w-32 h-32 bg-White shadow-md shadow-slate-900 z-0 p-7" src="/email.svg" alt="" loading="lazy"/>
-                <h4 className="font-bold text-3xl mb-5">Contact Info</h4>
-                <p className="mb-2 text-lg font-bold">Susana Luna:</p>
-                <a className=" mb-2 hover:underline" href="tel:+12092040088">(209) 204 - 0088</a>
-                <a className="mb-2 hover:underline" href="mailto:susanaluna.law@gmail.com">susanaluna.law@gmail.com</a>
-                <p className="mb-2 text-lg font-bold">Office Phone:</p>
-                <a className="hover:underline" href="tel:+12094098879">(209) 409 - 8879</a>
-            </div>
-            <div className="relative rounded-xl bg-Blue text-White py-32 px-32 w-[450px] h-[400px] flex flex-col mb-20 lg:mx-10">
-                <img className="absolute -top-10 rounded-xl left-40 lg:left-32 w-32 h-32 bg-White shadow-md shadow-slate-900 z-0 p-3" src="/location.svg" alt="" loading="lazy"/>
-                <h4 className="font-bold text-3xl">Location</h4>
-                <a className="text-lg  my-3 px-4 hover:underline" href="https://www.google.com/maps/dir/?api=1&destination=Luna+and+Associates+Modesto+CA&travelmode=driving" target="_blank" >1520 H St. Modesto, CA 95354</a>
-            </div>
-            <div className="relative rounded-xl bg-Blue text-White py-32 px-32 w-[450px] h-[400px] flex flex-col mb-20 lg:mx-10">
-                <img className="absolute -top-10 rounded-xl left-40 lg:left-32 w-32 h-32 bg-White shadow-md shadow-slate-900 z-0 p-6" src="/time.svg" alt="" loading="lazy"/>
-                <h4 className="font-bold text-3xl mb-5">Business Hours</h4>
-                <p className=" pr-2 mb-5">Mon - Fri: <span>9am-5pm</span></p>
-                <p className=" ">Sat - Sun: <span>Closed</span></p>
+
+        <section className="flex flex-col">
+            <h1 className="text-Blue text-5xl font-bold my-10">The Luna Building</h1>
+            <div className="flex flex-col md:flex-row">
+                <div className="flex flex-col bg-Blue text-White object-center justify-center items-center text-center w-full md:min-w-[60vw] max-h-[80vh] py-10">
+                    <h3 className="mb-10 font-bold text-4xl ">Contact Us</h3>
+                    {displayContact}
+                </div>
+                <div className=" flex w-full md:min-w-[40vw] max-h-[80vh]">
+                    <img className="object-cover" src="/Luna and Associates Photos copy/DSC_9806.jpeg" alt="luna building" />
+                </div>
             </div>
         </section>
-        <div className="flex flex-col items-center justify-center pb-20">
-            <p className="text-3xl text-slate-700 font-bold">Downtown Modesto</p>
+        <div className="flex flex-col items-center mx-auto justify-center py-20">
+            <p className="text-3xl text-slate-700 font-bold">Located in Downtown Modesto</p>
+            <a className="text-lg  my-3 px-4 hover:underline" href="https://www.google.com/maps/dir/?api=1&destination=Luna+and+Associates+Modesto+CA&travelmode=driving" target="_blank" >1520 H St. Modesto, CA 95354</a>
             <a className="" href="https://www.google.com/maps/dir/?api=1&destination=Luna+and+Associates+Modesto+CA&travelmode=driving" target="_blank" >
                 <img className="w-[70vw] lg:w-[40vw] mt-5 rounded-xl" src="/Luna.jpeg" alt="office" loading="lazy"/>
             </a>

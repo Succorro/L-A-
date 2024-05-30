@@ -30,11 +30,11 @@ function Footer() {
                         <p className="mt-10 text-base leading-7 text-opacity-70">
                         &quot;Ayudando a nuestra gente a realizar el Sueño Americano&quot;
                         </p>
-                        <div className="flex gap-5 justify-between mt-11 text-lg mx-auto whitespace-nowrap max-md:mt-10">
+                        {/* <div className="flex gap-5 justify-between mt-11 text-lg mx-auto whitespace-nowrap max-md:mt-10">
                             <a className="w-16" href=""><img src="/instagram.png" alt="" /></a>
                             <a className="w-16" href=""><img src="/facebook.png" alt="" /></a>
                             <a className="w-16" href=""><img src="/tik-tok.png" alt="" /></a>
-                        </div>
+                        </div> */}
                     </div>
                 </section>
                 <section className="flex flex-col ml-5 w-[65%] max-md:ml-0 max-md:w-full">

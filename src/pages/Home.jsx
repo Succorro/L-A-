@@ -59,7 +59,7 @@ function Home() {
           <button className="justify-center self-start px-7 py-5 mt-14 leading-6 text-center border-2 border-solid rounded-[100px] max-md:px-5 max-md:mt-10
             bg-Blue border-White text-White
             transition ease-in-out duration-1000 delay-300 
-            hover:text-Blue hover:bg-White hover:border-Blue">Services</button>
+            hover:text-Blue hover:bg-slate-100 hover:border-Blue">Services</button>
         </Link>
       </section>
 
