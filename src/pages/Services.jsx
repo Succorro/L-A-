@@ -1,15 +1,11 @@
 import { Link } from "react-router-dom"
 import servicesData from '../data/servicesData'
+import Service from "@/components/ui/Service"
 function Services() {
 
     const displayServices = servicesData.map((service, index) => {
-        const {name} = service
-        return (
-            <div key={index}>
-                {name}
-            </div>
-        )
-    })
+        return (<Service serviceData={service} key={index}/>)
+        })
   return (
     <div className=" bg-White ">
         <section className="relative bg-Blue min-h-screen flex flex-col justify-start items-center pt-32">
@@ -37,7 +33,7 @@ function Services() {
         <div id='info' className="my-10 sm:mb-20 md:mt-0 flex flex-col justify-start items-start mx-10">
             <h2 className="text-4xl mb-1 mx-10 font-bold text-Blue mt-20">Expertise</h2>
             <div className="h-0.5 mx-10 w-[40vw] sm:w-[35vw] md:w-[30vw] lg:w-[20vw] bg-Blue opacity-60 "></div>
-            <p className="text-xl text-slate-700 text-start m-10"> 
+            <p className="text-xl text-slate-700 text-start m-10 max-sm:mx-3"> 
                 <span className="font-bold text-slate-800">
                     At Susana B. Luna and Associates, we navigate the ever-evolving terrain of immigration law with unparalleled agility and foresight. 
                 </span>  Rooted in first-hand understanding of the immigration journey, our mission extends beyond current legal landscapes to anticipate future reforms.
@@ -45,20 +41,19 @@ function Services() {
 
             <h2 className="text-4xl mb-1 mx-10 font-bold text-Blue md:mt-3">Approach</h2>
             <div className="h-0.5 mx-10 w-[40vw] sm:w-[35vw] md:w-[30vw] lg:w-[20vw] bg-Blue opacity-60 mb-10 "></div>
-            <p className="text-xl text-slate-700 text-start mx-10">
+            <p className="text-xl text-slate-700 text-start mx-10 max-sm:mx-3">
                 <span className="font-bold text-slate-800">
                      We dedicate ourselves to providing not just service but stewardship—offering clarity, expertise, and unwavering support as we guide each client towards their American dream. 
-                </span>Stay ahead with us, where insight meets action, and your path to residency or citizenship is secured by those who not only know the way but foresee the future twists and turns.
+                </span> Stay ahead with us, where insight meets action, and your path to residency or citizenship is secured by those who not only know the way but foresee the future twists and turns.
             </p>
         </div>
 
         <div id='services' className="flex justify-center w-full items-center px-20 py-10">
-            <div className="border border-Blue border-l-5 border-0 p-10 w-full bg-Blue bg-opacity-20">
-                <h2 className="text-4xl sm:text-5xl text-start text-slate-800">What We Offer</h2>
+            <div className=" p-10 w-full bg-Blue bg-opacity-100">
+                <h2 className="text-4xl sm:text-5xl text-start text-slate-100">Our Legal Services</h2>
             </div>
         </div>
-        <div id='services list'>
-            <div>Family-Based Immigration</div>
+        <div id='services list' className="flex flex-col md:grid md:grid-cols-3 md:gap-1">
             {displayServices}
         </div>
     </div>

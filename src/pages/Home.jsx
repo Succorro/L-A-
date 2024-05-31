@@ -49,10 +49,10 @@ function Home() {
         <h1 className="text-4xl mb-1 mx-10 font-bold text-Blue md:mt-3">About Us</h1>
         <div className="h-0.5 mx-10 w-[40vw] sm:w-[35vw] md:w-[30vw] lg:w-[20vw] bg-Blue opacity-60 mb-10 "></div>
         
-        <p className="text-xl text-slate-700 text-start mb-4 mx-10">
+        <p className="text-xl text-slate-700 text-start mb-4 mx-10 max-sm:mx-3">
         At Susana B. Luna and Associates, we are committed to transforming the complexity of immigration into a clear path toward the American dream. As a firm founded by an immigrant for immigrants, we intimately understand the challenges and intricacies of this journey. 
         </p>
-        <p className="text-xl text-slate-700 text-start mx-10">
+        <p className="text-xl text-slate-700 text-start mx-10 max-sm:mx-3">
         Our mission is to ease your way through this process with our extensive expertise and years of experience, ensuring that your journey to achieving the American dream is not just a possibility but a reality. Let us guide you home.
         </p>
         <Link className="mx-auto" to='/services' onClick={() => scroll.scrollToTop()}> 
@@ -70,7 +70,7 @@ function Home() {
             <div className="flex overflow-hidden relative flex-col grow justify-center items-center pb-20 md:pb-0 text-xl text-center text-white whitespace-nowrap  max-md:max-w-full">
               <img
                 loading="lazy"
-                src="/Luna and Associates Photos copy/DSC_9246.jpeg"
+                src="/LunaAndAssociates/DSC_9246.jpeg"
                 className="h-[80vh] lg:h-[100vh] object-cover object-bottom w-full"
                 alt="law building"
               />
@@ -81,7 +81,7 @@ function Home() {
               <h2 className="text-5xl font-bold tracking-tight leading-[52px] max-md:max-w-full">
                 Team Luna
               </h2>
-              <p className="mt-9 text-xl leading-8 text-slate-700 max-md:max-w-full md:mx-0 mx-20">
+              <p className="mt-9 text-xl leading-8 text-slate-700 max-md:max-w-full md:mx-0 mx-20 max-sm:mx-3">
                 Team Luna is committed and dedicated to helping you with your immigration needs.
               </p>
               <div className="flex flex-row justify-center gap-5">

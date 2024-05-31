@@ -34,7 +34,7 @@ function Team() {
         <section className="relative bg-Blue min-h-screen flex flex-col justify-start items-center pt-32">
             <img
                 className="absolute inset-0 opacity-40 object-cover h-full lg:w-full lg:h-[100vh] pt-16 z-0"
-                src="/Luna and Associates Photos copy/DSC_9931.jpeg"
+                src="/LunaAndAssociates/DSC_9931.jpeg"
                 alt="Team header"
                 loading="lazy"
             />
@@ -43,7 +43,7 @@ function Team() {
                 <p className="text-lg pt-10 text-start text-White px-20 lg:px-96">
                 Team Luna brings a wealth of knowledge and expertise, allowing us to deliver comprehensive and effective legal representation.
                 </p>
-                <a href="#teamSection" className=" px-7 py-5 border-2 border-solid rounded-[100px] max-md:px-5  bg-Blue border-Blue text-White transition duration-300 delay-100 ease-in-out
+                <a href="#teamSection" className=" px-7 py-5 border-2 border-solid rounded-[100px] max-md:px-5 md:mt-3 bg-Blue border-Blue text-White transition duration-300 delay-100 ease-in-out
                      hover:border-slate-200 hover:bg-slate-200 hover:text-Blue text-lg">Meet the Team</a>
             </div>
         </section>

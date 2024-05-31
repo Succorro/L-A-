@@ -7,8 +7,8 @@ function Contact() {
         return (
             <div key={index} className="flex flex-col my-5 w-full items-center">
                 <div  className="flex flex-row ">
-                    <div className="bg-White rounded-full px-5 py-5 mx-5 max-h-[10vh]">
-                        <img className="w-10" src={image} alt="contact" />
+                    <div className="bg-White rounded-full px-5 py-5 mx-5 w-[10vh] h-[10vh] flex justify-center">
+                        <img className="w-10 " src={image} alt="contact" />
                     </div>
                     <div className="flex flex-col justify-center">
                         <p className="font-semibold text-xl tracking-wide">{title}</p>
@@ -26,8 +26,8 @@ function Contact() {
     <div className="bg-White">
         <section className="relative bg-Blue min-h-screen flex flex-col justify-start items-center pt-32">
             <img
-                className="absolute inset-0 opacity-40 lg:object-cover w-full h-full -top-10 mt-10 lg:w-full lg:h-[100vh] z-0"
-                src="/Luna and Associates Photos copy/SL2.jpeg"
+                className="absolute inset-0 opacity-40 max-sm:opacity-50 max-sm:object-cover lg:object-cover w-full h-full -top-10 mt-10 lg:w-full lg:h-[100vh] z-0"
+                src="/LunaAndAssociates/SL2.jpeg"
                 alt="luna building"
                 loading="lazy"
             />
@@ -41,14 +41,13 @@ function Contact() {
         </section>
 
         <section className="flex flex-col">
-            {/* <h1 className="text-White bg-Blue text-5xl font-bold py-10 ">The Luna Building</h1> */}
             <div className="flex flex-col md:flex-row">
                 <div className="flex flex-col bg-Blue text-White object-center justify-center items-center text-center w-full md:min-w-[60vw] max-h-[80vh] py-10">
                     <h3 className="mb-10 font-bold text-4xl ">Contact Us</h3>
                     {displayContact}
                 </div>
                 <div className=" flex w-full md:min-w-[40vw] max-h-[80vh]">
-                    <img className="object-cover" src="/Luna and Associates Photos copy/DSC_9806.jpeg" alt="luna building" />
+                    <img className="object-cover" src="/LunaAndAssociates/DSC_9806.jpeg" alt="luna building" />
                 </div>
             </div>
         </section>
