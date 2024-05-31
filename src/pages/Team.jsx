@@ -12,7 +12,7 @@ function Team() {
                         <p className="text-slate-300 mt-5">{person.title}</p>
                     </div>
                 </SheetTrigger>
-                <SheetContent className='w-[100vw]'>
+                <SheetContent className='w-[100vw] overflow-scroll'>
                     <SheetHeader className='mt-5'>
                         <img className="h-[35vh] object-contain" src={person.image2} alt="" loading="lazy"/>
                         <SheetTitle className='text-slate-900 text-4xl'>
@@ -40,7 +40,7 @@ function Team() {
             />
             <div className="relative z-10 flex flex-col justify-center items-center text-center">
                 <h1 className="text-5xl text-White">Team Luna</h1>
-                <p className="text-lg pt-10 text-start text-White px-20 lg:px-96">
+                <p className="text-lg pt-10 text-start text-White px-20 lg:px-96 max-sm:px-10">
                 Team Luna brings a wealth of knowledge and expertise, allowing us to deliver comprehensive and effective legal representation.
                 </p>
                 <a href="#teamSection" className=" px-7 py-5 border-2 border-solid rounded-[100px] max-md:px-5 md:mt-3 bg-Blue border-Blue text-White transition duration-300 delay-100 ease-in-out

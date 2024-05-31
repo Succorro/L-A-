@@ -14,10 +14,10 @@ function Service({serviceData}) {
                 {desc}
             </p>
         </SheetTrigger>
-        <SheetContent className='w-[100vw]'>
+        <SheetContent className='w-[100vw] overflow-scroll'>
             <SheetHeader className='mt-5'>
-                <img className="h-[35vh] object-contain" src={image} alt="" loading="lazy"/>
-                <SheetTitle className='text-slate-900 text-4xl'>
+                <img className="h-[20vh] object-contain" src={image} alt="" loading="lazy"/>
+                <SheetTitle className='text-slate-900 text-4xl my-2'>
                     {name}
                 </SheetTitle>
                 <p className="font-bold text-blue-900">{stat}</p>
