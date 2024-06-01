@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import servicesData from '../data/servicesData'
-import Service from "@/components/ui/Service"
+import Service from "@/components/Service"
 function Services() {
 
     const displayServices = servicesData.map((service, index) => {

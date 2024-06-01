@@ -10,8 +10,8 @@ export const contactData = [
   },
   {
     title: "Email",
-    text: "susanaluna.law@gmail.com",
-    href: "mailto:susanaluna.law@gmail.com",
+    text: "SLuna@LunaLawgroup.com",
+    href: "mailto:sluna@lunalawgroup.com",
     image: "/email.svg",
   },
   {

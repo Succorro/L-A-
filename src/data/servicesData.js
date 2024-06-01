@@ -91,14 +91,14 @@
 //   },
 // ];
 const servicesData = [
-  {
-    name: "Family-Based Immigration",
-    desc: "",
-    desc2: "",
-    desc3: "",
-    image: "/group.png",
-    stat: "",
-  },
+  // {
+  //   name: "Family-Based Immigration",
+  //   desc: "",
+  //   desc2: "",
+  //   desc3: "",
+  //   image: "/group.png",
+  //   stat: "",
+  // },
   {
     name: "Consular Process",
     desc: "Consular Process is one of the ways in which a person may obtain legal permanent residence to the United States. This type of process requires that an applicant travel abroad to their country of origin to attend an immigrant visa appointment.",

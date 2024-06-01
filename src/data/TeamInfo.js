@@ -22,8 +22,8 @@ const TeamInfo = [
   },
   {
     name: "Melanie",
-    title: "",
-    bio: "",
+    title: "Legal Assistant",
+    bio: "Melanie Gonzalez, a proud Mexican-American, daughter of immigrants, was raised in the Central Valley of California. As a daughter of immigrants, she has witnessed the firsthand struggles faced by immigrant families. Currently, Melanie is pursuing her education at California State University, Stanislaus, dedicated in earning her Bachelors of Arts in Political Science. Upon graduation, she is set on pursuing a career in the immigration field. Since 2022, Melanie has been serving as a legal assistant at Susana B. Luna and Associates, where she works tirelessly to provide undocumented families with the resources required to successfully navigate the complex immigration system, and to make this country their safe haven as legal residents of the United States of America.",
     image: "/LunaAndAssociates/Melanie.jpeg",
     image2: "/LunaAndAssociates/Melanie2.jpeg",
   },
