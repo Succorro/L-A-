@@ -10,7 +10,7 @@ export const contactData = [
   },
   {
     title: "Email",
-    text: "SLuna@LunaLawgroup.com",
+    text: "SLuna@LunaLawGroup.com",
     href: "mailto:sluna@lunalawgroup.com",
     image: "/email.svg",
   },
