@@ -23,7 +23,7 @@ function Footer() {
         <div className="mt-6 w-full">
             <div className="flex max-md:flex-col max-md:gap-0 items-center">
                 <section className=" md:w-[20%]">
-                    <img src="/Logo2.png" alt="" />
+                    <img src="/LogoMed.png" alt="" />
                 </section>
                 <section className="w-full md:w-[40%]">
                     <div className="flex flex-col text-White max-md:mt-10">

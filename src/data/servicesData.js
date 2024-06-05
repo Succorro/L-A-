@@ -160,9 +160,9 @@ const servicesData = [
   },
   {
     name: "Naturalization",
-    desc: "There are several ways to become a citizen of the United States, and one of those is by way of naturalization.",
+    desc: "There are several ways to become a citizen of the United States, and one of those is by way of naturalization. The naturalization process includes an in person interview and an extensive review of the applicant’s entire lifetime record.",
     desc2:
-      "The naturalization process includes an in person interview and an extensive review of the applicant’s entire lifetime record. It is imperative that an applicant obtain the help of an experienced attorney while applying for US Citizenship because at the time of record review, USCIS may decide to turn over any applicant to ICE for processing before an immigration judge, which could result in the loss of the applicant’s legal status.",
+      "It is imperative that an applicant obtain the help of an experienced attorney while applying for US Citizenship because at the time of record review, USCIS may decide to turn over any applicant to ICE for processing before an immigration judge, which could result in the loss of the applicant’s legal status.",
     desc3:
       "Susana Luna is a licensed attorney in the State of California, and she takes pride in being able to accompany, represent, and protect her clients in their applications before USCIS and all other immigration agencies.",
     image: "/LunaAndAssociates/Naturalization.png",
