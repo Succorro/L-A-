@@ -48,10 +48,11 @@ function Services() {
             </p>
         </div>
 
-        <div id='services' className="flex justify-center w-full items-center px-20 py-10">
+        <div id='services' className="flex flex-col justify-center w-full items-center px-20 py-10">
             <div className=" p-10 w-full bg-Blue bg-opacity-100">
                 <h2 className="text-4xl sm:text-5xl text-start text-slate-100">Our Legal Services</h2>
             </div>
+            <p className="mb-10 text-slate-300">Click on an image for more information</p>
         </div>
         <div id='services list' className="flex flex-col md:grid md:grid-cols-3 md:gap-1">
             {displayServices}
