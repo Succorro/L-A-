@@ -49,7 +49,7 @@ function Team() {
         </section>
         <div className="bg-White py-20">
             <div className="flex flex-col text-start px-10 lg:px-60">
-                <h1 className="text-3xl text-Blue mb-10">Commitment to our clients</h1>
+                <h1 className="text-3xl text-Blue mb-10">Commitment to Our Clients</h1>
                 <p className="text-slate-700 text-lg  mb-4">Our team at Susana B. Luna and Associates embodies a deep commitment to empowering individuals on their immigration journey. With a profound understanding of the complexities and nuances of immigration law, our diverse team of legal experts stands ready to navigate the legal landscape with precision and empathy.</p>
             </div>
         </div>
